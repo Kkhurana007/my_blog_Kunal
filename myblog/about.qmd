@@ -1,6 +1,6 @@
 ---
 title: "About me"
-image: Kunal_pic.jpg
+image: Kunal_pic.jpeg
 about:
   template: jolla
   links:
