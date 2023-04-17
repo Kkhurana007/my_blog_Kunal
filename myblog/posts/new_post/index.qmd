@@ -1,0 +1,10 @@
+---
+title: "Soil science updates"
+author: "Kunal Khurana"
+date: "2023-04-17"
+categories: [news, code, analysis]
+
+---
+
+This is a post for testing.
+-
