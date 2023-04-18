@@ -1,8 +1,10 @@
 ---
-title: "About me"
+title: "Kunal Khurana"
 image: Kunal_pic.jpeg
 about:
   template: jolla
+  image-width: 10em
+  image-shape: round
 
   links:
     - icon: medium
@@ -23,7 +25,7 @@ As a broadly trained soil physicist with expertise in agronomy, soil fertility, 
 
 
 
-📝Education
+## 📝Education
 
 2022| GÉNIE ET SCIENCE APPLIQUÉES| CÉGEP DU VIEUX MONTRÉAL, CA
 
@@ -34,7 +36,7 @@ As a broadly trained soil physicist with expertise in agronomy, soil fertility, 
 2013| BACHELOR’S IN AGRICULTURE| PUNJABI UNIVERSITY PATIALA, IN
 
 
-🧑‍💼  Work Experience
+## 🧑‍💼 Work Experience
 
 September 2022 -- March 2023| RESEARCH ASSISTANT, McGill University
 
