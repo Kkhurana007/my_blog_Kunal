@@ -3,7 +3,7 @@ title: "Welcome To My Blog"
 author: "Tristan O'Malley"
 date: "2023-04-14"
 categories: [news]
-draft: true
+draft: false
 freeze: true
 ---
 
