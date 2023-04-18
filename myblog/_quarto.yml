@@ -12,7 +12,7 @@ website:
         href: https://twitter.com/kunalkhurana007
 format:
   html:
-    theme: cosmo
+    theme: united
     css: styles.css
 
 
