@@ -9,9 +9,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Digitalization of Agriculture",
+    "title": "Posts",
     "section": "",
-    "text": "coding_python\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSoil science updates\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\nNo matching items"
+    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nDigitalization\n\n\nMachine learning\n\n\nAI\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -19,5 +19,12 @@
     "title": "Post With Code",
     "section": "",
     "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/Digitalization_of_agricluture/index.html",
+    "href": "posts/Digitalization_of_agricluture/index.html",
+    "title": "Digitaliztion of Agriculture",
+    "section": "",
+    "text": "The article “The next wave of agriculture in Saskatchewan is digital and Indigenous-led” discusses how Indigenous communities in Saskatchewan are utilizing digital technologies to revitalize traditional farming practices, while also introducing new techniques to increase crop yields and reduce the impact of climate change. Through the use of precision agriculture, remote sensing technologies, and data analysis, these communities are working to improve soil health, increase biodiversity, and foster sustainable practices. The article highlights several Indigenous-led initiatives, such as the One House, Many Nations project and the Whitecap Dakota First Nation’s Regenerative Farming Program, which are helping to promote food sovereignty and economic development in the region. Additionally, these initiatives are providing opportunities for Indigenous youth to learn about their cultural heritage and connect with the land."
   }
 ]
