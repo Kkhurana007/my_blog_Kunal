@@ -3,10 +3,14 @@ project:
 
 website:
   title: "Homepage"
+  site-url: https://www.ilovesoils.com
+  description: "Sampling blog"
   margin-header: subscribe.html
   navbar:
     right:
       - about.qmd
+      - icon: rss
+        href: index.xml
       - icon: github
         href: https://github.com/Kkhurana007
       - icon: twitter
