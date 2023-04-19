@@ -93,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
-</head>
+<link rel="alternate" type="application/rss+xml" title="Homepage" href="index.xml"></head>
 
 <body class="nav-fixed">
 
@@ -189,19 +189,19 @@ ul.task-list li input[type="checkbox"] {
 
   #sib-container input:-ms-input-placeholder {
     text-align: left;
-    font-family: "Helvetica", sans-serif;
+    font-family: "Garamond", serif;
     color: #c0ccda;
   }
 
   #sib-container input::placeholder {
     text-align: left;
-    font-family: "Helvetica", sans-serif;
+    font-family: "Garamond", serif;
     color: #c0ccda;
   }
 
   #sib-container textarea::placeholder {
     text-align: left;
-    font-family: "Helvetica", sans-serif;
+    font-family: "Garamond", serif;
     color: #c0ccda;
   }
 </style>
@@ -209,7 +209,7 @@ ul.task-list li input[type="checkbox"] {
 <!--  END - We recommend to place the above code in head tag of your website html -->
 
 <!-- START - We recommend to place the below code where you want the form in your website html  -->
-<div class="sib-form" style="text-align: center; background-color: #eff2f7">
+<div class="sib-form" style="text-align: center; background-color: #fafdf9">
   <div id="sib-form-container" class="sib-form-container">
     <div id="error-message" class="sib-form-message-panel" style="
         font-size: 16px;
@@ -219,7 +219,7 @@ ul.task-list li input[type="checkbox"] {
         background-color: #ffeded;
         border-radius: 3px;
         border-color: #ff4949;
-        max-width: 540px;
+        max-width: 350px;
       ">
       <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
         <svg viewbox="0 0 512 512" class="sib-icon sib-notification__icon">
@@ -239,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
         background-color: #e7faf0;
         border-radius: 3px;
         border-color: #13ce66;
-        max-width: 540px;
+        max-width: 350px;
       ">
       <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
         <svg viewbox="0 0 512 512" class="sib-icon sib-notification__icon">
@@ -251,44 +251,17 @@ ul.task-list li input[type="checkbox"] {
       </div>
     </div>
     <div></div>
-    <div id="sib-container" class="sib-container--large sib-container--vertical" style="
+    <div id="sib-container" class="sib-container--medium sib-container--vertical" style="
         text-align: center;
         background-color: rgba(255, 255, 255, 1);
-        max-width: 540px;
+        max-width: 350px;
         border-radius: 3px;
         border-width: 1px;
         border-color: #c0ccd9;
         border-style: solid;
         direction: ltr;
       ">
-      <form id="sib-form" method="POST" action="https://45248263.sibforms.com/serve/MUIEAFHWt6drHVWDItGE1OPh_-cILEKYSdWOBSg1OLpoTa8QumeqE_yYbyRDDFqABsZDAQaq6Fn-MppKbKcmifEM-sN460vPFn_5kqqjOSW7Y-GyNhKEjXx0uTrUv7verMWicWFSpSfTRbIca3hr3rpg0kt_folgXJFg9zr0HMjWSbotjqwsoZJl-N3VRvLb61lXcxTE6i60jOG4" data-type="subscription">
-        <div style="padding: 8px 0">
-          <div class="sib-form-block" style="
-              font-size: 32px;
-              text-align: left;
-              font-weight: 700;
-              font-family: 'Helvetica', sans-serif;
-              color: #3c4858;
-              background-color: transparent;
-              text-align: left;
-            ">
-            <p>Newsletter</p>
-          </div>
-        </div>
-        <div style="padding: 8px 0">
-          <div class="sib-form-block" style="
-              font-size: 16px;
-              text-align: left;
-              font-family: 'Helvetica', sans-serif;
-              color: #3c4858;
-              background-color: transparent;
-              text-align: left;
-            ">
-            <div class="sib-text-form-block">
-              <p>For updates, please subscribe!</p>
-            </div>
-          </div>
-        </div>
+      <form id="sib-form" method="POST" action="https://45248263.sibforms.com/serve/MUIEAOPr1NzrJ_reMJHMHLYDz5pM7R73M-_l2MGIvfRzdB-27-kbqVCCl59SatKqRFgc6Xovvh1OzW8uqGTulZU1tA5Yj4n_WGBmpNjVee_f_II84FNvgNL6ikWPUf8bq51KEvme0ZDZ1oLcWFJMhuhHX4nYlM7uRR3fZsm8kBTfNVrqYX-HN96Eewr-ngYP9994EU40CzWekr5y" data-type="subscription">
         <div style="padding: 8px 0">
           <div class="sib-input sib-form-block">
             <div class="form__entry entry_block">
@@ -296,12 +269,12 @@ ul.task-list li input[type="checkbox"] {
                 <label class="entry__label" style="
                     font-weight: 700;
                     text-align: left;
-                    font-size: 16px;
+                    font-size: 14px;
                     text-align: left;
                     font-weight: 700;
                     font-family: 'Helvetica', sans-serif;
                     color: #3c4858;
-                  " for="EMAIL" data-required="*">Enter your email address to subscribe</label>
+                  " for="EMAIL" data-required="*">Subscribe</label>
 
                 <div class="entry__field">
                   <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required="">
@@ -318,22 +291,13 @@ ul.task-list li input[type="checkbox"] {
                   border-color: #ff4949;
                 ">
               </label>
-              <label class="entry__specification" style="
-                  font-size: 12px;
-                  text-align: left;
-                  font-family: 'Helvetica', sans-serif;
-                  color: #8390a4;
-                  text-align: left;
-                ">
-                Provide your email address to subscribe. For e.g abc@xyz.com
-              </label>
             </div>
           </div>
         </div>
         <div style="padding: 8px 0">
           <div class="sib-form-block" style="text-align: left">
             <button class="sib-form-block__button sib-form-block__button-with-loader" style="
-                font-size: 16px;
+                font-size: 12px;
                 text-align: left;
                 font-weight: 700;
                 font-family: 'Helvetica', sans-serif;

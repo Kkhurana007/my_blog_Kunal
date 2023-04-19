@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Homepage</title>
+<link>https://www.ilovesoils.com/index.html</link>
+<atom:link href="https://www.ilovesoils.com/index.xml" rel="self" type="application/rss+xml"/>
+<description>Sampling blog</description>
+<generator>quarto-1.1.251</generator>
+<lastBuildDate>Sun, 16 Apr 2023 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>coding_python</title>
+  <dc:creator>Kunal Khurana</dc:creator>
+  <link>https://www.ilovesoils.com/posts/coding_with_python/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="simple-hein-just-write-something-and-it-will-get-displayed-over-there" class="level2">
+<h2 class="anchored" data-anchor-id="simple-hein-just-write-something-and-it-will-get-displayed-over-there">Simple, hein! Just write something and it will get displayed over there!</h2>
+
+
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <category>code</category>
+  <category>analysis</category>
+  <guid>https://www.ilovesoils.com/posts/coding_with_python/index.html</guid>
+  <pubDate>Sun, 16 Apr 2023 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>Digitaliztion of Agriculture</title>
+  <dc:creator>Kunal Khurana</dc:creator>
+  <link>https://www.ilovesoils.com/posts/Digitalization_of_agricluture/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The article- <a href="https://paletteskills.org/resources/the-next-wave-of-agriculture-in-saskatchewan-is-digital-and-indigenous-led">“The next wave of agriculture in Saskatchewan is digital and Indigenous-led”</a> discusses how Indigenous communities in Saskatchewan are utilizing digital technologies to revitalize traditional farming practices.</p>
+<p>While also introducing new techniques to increase crop yields and reduce the impact of climate change and with the use of precision agriculture, remote sensing technologies, and data analysis, these communities are working to improve soil health, increase biodiversity, and foster sustainable practices. The article highlights several Indigenous-led initiatives, such as the One House, Many Nations project and the Whitecap Dakota First Nation’s Regenerative Farming Program, which are helping to promote food sovereignty and economic development in the region. Additionally, these initiatives are providing opportunities for Indigenous youth to learn about their cultural heritage and connect with the land.</p>
+
+
+
+ ]]></description>
+  <category>Digitalization</category>
+  <category>Machine learning</category>
+  <category>AI</category>
+  <guid>https://www.ilovesoils.com/posts/Digitalization_of_agricluture/index.html</guid>
+  <pubDate>Sun, 16 Apr 2023 18:30:00 GMT</pubDate>
+  <media:content url="https://www.ilovesoils.com/posts/Digitalization_of_agricluture/Digitaliztion.png" medium="image" type="image/png" height="86" width="144"/>
+</item>
+<item>
+  <title>Soil science updates</title>
+  <dc:creator>Kunal Khurana</dc:creator>
+  <link>https://www.ilovesoils.com/posts/soil_science_stuff/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="this-is-a-post-for-testing." class="level2">
+<h2 class="anchored" data-anchor-id="this-is-a-post-for-testing.">This is a post for testing.</h2>
+
+
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <category>code</category>
+  <category>analysis</category>
+  <guid>https://www.ilovesoils.com/posts/soil_science_stuff/index.html</guid>
+  <pubDate>Sun, 16 Apr 2023 18:30:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
