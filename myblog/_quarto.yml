@@ -15,6 +15,8 @@ website:
         href: https://github.com/Kkhurana007
       - icon: twitter
         href: https://twitter.com/kunalkhurana007
+execute:
+  freeze: auto  # re-render only when source changes
 format:
   html:
     theme: united

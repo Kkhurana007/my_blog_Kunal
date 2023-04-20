@@ -2,9 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/coding_with_python/index.html",
-      "/posts/Digitalization_of_agricluture/index.html",
-      "/posts/soil_science_stuff/index.html"
+      "/posts/Digitalization_of_agricluture/index.html"
     ]
   }
 ]

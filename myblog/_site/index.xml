@@ -12,28 +12,6 @@
 <generator>quarto-1.1.251</generator>
 <lastBuildDate>Sun, 16 Apr 2023 18:30:00 GMT</lastBuildDate>
 <item>
-  <title>coding_python</title>
-  <dc:creator>Kunal Khurana</dc:creator>
-  <link>https://www.ilovesoils.com/posts/coding_with_python/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="simple-hein-just-write-something-and-it-will-get-displayed-over-there" class="level2">
-<h2 class="anchored" data-anchor-id="simple-hein-just-write-something-and-it-will-get-displayed-over-there">Simple, hein! Just write something and it will get displayed over there!</h2>
-
-
-</section>
-
- ]]></description>
-  <category>news</category>
-  <category>code</category>
-  <category>analysis</category>
-  <guid>https://www.ilovesoils.com/posts/coding_with_python/index.html</guid>
-  <pubDate>Sun, 16 Apr 2023 18:30:00 GMT</pubDate>
-</item>
-<item>
   <title>Digitaliztion of Agriculture</title>
   <dc:creator>Kunal Khurana</dc:creator>
   <link>https://www.ilovesoils.com/posts/Digitalization_of_agricluture/index.html</link>
@@ -54,28 +32,6 @@
   <guid>https://www.ilovesoils.com/posts/Digitalization_of_agricluture/index.html</guid>
   <pubDate>Sun, 16 Apr 2023 18:30:00 GMT</pubDate>
   <media:content url="https://www.ilovesoils.com/posts/Digitalization_of_agricluture/Digitaliztion.png" medium="image" type="image/png" height="86" width="144"/>
-</item>
-<item>
-  <title>Soil science updates</title>
-  <dc:creator>Kunal Khurana</dc:creator>
-  <link>https://www.ilovesoils.com/posts/soil_science_stuff/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="this-is-a-post-for-testing." class="level2">
-<h2 class="anchored" data-anchor-id="this-is-a-post-for-testing.">This is a post for testing.</h2>
-
-
-</section>
-
- ]]></description>
-  <category>news</category>
-  <category>code</category>
-  <category>analysis</category>
-  <guid>https://www.ilovesoils.com/posts/soil_science_stuff/index.html</guid>
-  <pubDate>Sun, 16 Apr 2023 18:30:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
