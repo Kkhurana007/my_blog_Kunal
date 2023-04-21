@@ -4,7 +4,7 @@ project:
 website:
   title: "Homepage"
   site-url: https://www.ilovesoils.com
-  description: "Sampling blog"
+  description: "Personal blog"
   margin-header: subscribe.html
   navbar:
     right:

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.ilovesoils.com/index.html</loc>
-    <lastmod>2023-04-21T08:14:25.738Z</lastmod>
+    <lastmod>2023-04-21T08:55:07.762Z</lastmod>
   </url>
   <url>
     <loc>https://www.ilovesoils.com/about.html</loc>
@@ -15,5 +15,13 @@
   <url>
     <loc>https://www.ilovesoils.com/posts/Machine learning in Agriculture/index.html</loc>
     <lastmod>2023-04-21T08:14:24.966Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ilovesoils.com/posts/irrigraiton_scheduling/content.html</loc>
+    <lastmod>2023-04-21T08:55:03.215Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ilovesoils.com/posts/water_scarcity/content.html</loc>
+    <lastmod>2023-04-21T08:49:23.216Z</lastmod>
   </url>
 </urlset>

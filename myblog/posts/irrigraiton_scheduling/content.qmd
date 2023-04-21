@@ -3,7 +3,7 @@ title: "Irrigation scheduling with Machine learning"
 author: "Kunal Khurana"
 date: "2023-04-21"
 categories: [Machine learning, Soil Analysis, Yield prediction]
-image: " "
+
 ---
 
 The paper "An Intelligent System for Soil Moisture Prediction and Irrigation Scheduling" proposes an intelligent system for predicting soil moisture and optimizing irrigation scheduling using machine learning algorithms.
