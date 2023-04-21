@@ -1,0 +1,11 @@
+---
+title: "Water scarcity and computational approaches"
+author: "Kunal Khurana"
+date: "2023-04-21"
+categories: [Water scarcity, Computational appraoches]
+image: "Digitaliztion.png"
+---
+
+Content coming up!
+
+
