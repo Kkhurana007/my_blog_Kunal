@@ -7,6 +7,10 @@ website:
   description: "Personal blog"
   margin-header: subscribe.html
   navbar:
+    background: primary
+    search: true
+    left:
+      -text : "Home"
     right:
       - about.qmd
       - icon: rss
