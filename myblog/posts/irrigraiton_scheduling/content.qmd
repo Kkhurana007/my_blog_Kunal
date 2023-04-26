@@ -2,9 +2,8 @@
 title: "Irrigation scheduling with Machine learning"
 author: "Kunal Khurana"
 date: "2023-04-21"
-categories: [Machine learning, Soil Analysis, Yield prediction]
-image: "Irrigration_scheduling.jpg"
-
+categories: [Machine learning, Irrigation, Modelling]
+image: "Irrigation_scheduling.jpg"
 ---
 
 The paper ["Neural Network soil moisture model for irrigration scheduling"](https://www.sciencedirect.com/science/article/pii/S0168169920313016) proposes an intelligent system for predicting soil moisture and optimizing irrigation scheduling using machine learning algorithms.
