@@ -3,6 +3,7 @@ project:
 
 website:
   title: "Homepage"
+  lang: fr
   site-url: https://www.ilovesoils.com
   description: "Personal blog"
   margin-header: subscribe.html
@@ -10,7 +11,9 @@ website:
     background: primary
     search: true
     left:
-      -text : "Home"
+      - text: "Home"
+        file: index.qmd
+      - about.qmd
     right:
       - about.qmd
       - icon: rss
