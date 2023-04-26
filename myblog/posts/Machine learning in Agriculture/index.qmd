@@ -3,7 +3,7 @@ title: "Machine learning in Agriculture"
 author: "Kunal Khurana"
 date: "2023-04-21"
 categories: [Machine learning, Soil Analysis, Yield prediction]
-image: "Digitaliztion.png"
+image: "ML_in_agri.jpg"
 ---
 
 The article ["Machine Learning in Agriculture: A Review"](https://www.researchgate.net/profile/Muhammad-Suleman-Memon/publication/351766285_Machine_Learning_In_Agriculture_A_Review/links/60a83aae45851522bc0a5479/Machine-Learning-In-Agriculture-A-Review.pdf) provides a comprehensive overview of the current state and potential applications of machine learning in agriculture. 
