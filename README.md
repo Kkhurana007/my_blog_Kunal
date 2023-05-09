@@ -20,5 +20,4 @@ possible from a single markdown file! From websites to presentations to books!
 
 ## Reference
 
-This website uses many of Quarto features, and as such, can be used as a reference guide for how to implement such features yourself. See a feature on my 
-site you want to implement yourself? Check the URL of the page, and look up the same page at the same path in this repository.
+This website uses many of Quarto features, and as such, can be used as a reference guide for how to implement such features yourself. Check the URL of the page, to know more!
