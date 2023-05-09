@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.ilovesoils.com/index.html</loc>
-    <lastmod>2023-05-05T22:43:16.531Z</lastmod>
+    <lastmod>2023-05-09T16:37:09.923Z</lastmod>
   </url>
   <url>
     <loc>https://www.ilovesoils.com/about.html</loc>
-    <lastmod>2023-05-06T14:05:05.627Z</lastmod>
+    <lastmod>2023-05-09T16:37:16.635Z</lastmod>
   </url>
   <url>
     <loc>https://www.ilovesoils.com/posts/Digitalization_of_agricluture/index.html</loc>
@@ -23,5 +23,25 @@
   <url>
     <loc>https://www.ilovesoils.com/posts/water_scarcity/content.html</loc>
     <lastmod>2023-04-21T08:49:23.216Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ilovesoils.com/myblog/about.html</loc>
+    <lastmod>2023-05-09T16:37:05.038Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ilovesoils.com/myblog/index.html</loc>
+    <lastmod>2023-05-09T16:37:06.432Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ilovesoils.com/myblog/posts/Digitalization_of_agricluture/index.html</loc>
+    <lastmod>2023-05-09T16:37:07.150Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ilovesoils.com/myblog/posts/irrigraiton_scheduling/content.html</loc>
+    <lastmod>2023-05-09T16:37:07.835Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ilovesoils.com/myblog/posts/Machine learning in Agriculture/index.html</loc>
+    <lastmod>2023-05-09T16:37:08.528Z</lastmod>
   </url>
 </urlset>
