@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Homepage</title>
+<link>https://www.ilovesoils.com/index.html</link>
+<atom:link href="https://www.ilovesoils.com/index.xml" rel="self" type="application/rss+xml"/>
+<description>Personal blog</description>
+<generator>quarto-1.1.251</generator>
+<lastBuildDate>Thu, 20 Apr 2023 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>Irrigation scheduling with Machine learning</title>
+  <dc:creator>Kunal Khurana</dc:creator>
+  <link>https://www.ilovesoils.com/posts/irrigraiton_scheduling/content.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The paper <a href="https://www.sciencedirect.com/science/article/pii/S0168169920313016">“Neural Network soil moisture model for irrigration scheduling”</a> proposes an intelligent system for predicting soil moisture and optimizing irrigation scheduling using machine learning algorithms.</p>
+<p>The proposed system uses a wireless sensor network (WSN) to monitor soil moisture levels and collects data from various sensors installed in the soil. The data collected from the WSN is then processed and analyzed using machine learning algorithms to predict soil moisture levels and determine optimal irrigation schedules.</p>
+<p>The authors used two machine learning algorithms, support vector regression (SVR) and random forest (RF), to develop the predictive models for soil moisture prediction. The models were trained using data collected from the WSN and validated using real-world data.</p>
+<p>The results of the study showed that the proposed system is effective in predicting soil moisture levels and optimizing irrigation scheduling. The SVR model outperformed the RF model, achieving a mean absolute error of 0.026 for soil moisture prediction.</p>
+<p>Henceforth, the proposed system provides an automated and intelligent solution for soil moisture prediction and irrigation scheduling, which can help farmers optimize their irrigation practices and reduce water usage.</p>
+
+
+
+ ]]></description>
+  <category>Machine learning</category>
+  <category>Irrigation</category>
+  <category>Modelling</category>
+  <guid>https://www.ilovesoils.com/posts/irrigraiton_scheduling/content.html</guid>
+  <pubDate>Thu, 20 Apr 2023 18:30:00 GMT</pubDate>
+  <media:content url="https://www.ilovesoils.com/posts/irrigraiton_scheduling/Irrigation_scheduling.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Machine learning in Agriculture</title>
+  <dc:creator>Kunal Khurana</dc:creator>
+  <link>https://www.ilovesoils.com/posts/Machine learning in Agriculture/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The article <a href="https://www.researchgate.net/profile/Muhammad-Suleman-Memon/publication/351766285_Machine_Learning_In_Agriculture_A_Review/links/60a83aae45851522bc0a5479/Machine-Learning-In-Agriculture-A-Review.pdf">“Machine Learning in Agriculture: A Review”</a> provides a comprehensive overview of the current state and potential applications of machine learning in agriculture.</p>
+<p>The authors first introduce the concept of machine learning and its various techniques, including supervised, unsupervised, and reinforcement learning. They then provide an overview of the different areas in agriculture where machine learning can be applied, such as crop yield prediction, plant disease diagnosis, soil analysis, and livestock management.</p>
+<p>The article further explores the use of different types of sensors and data collection techniques that can be used to gather data for machine learning applications in agriculture. The authors also discuss the challenges associated with implementing machine learning in agriculture, such as data quality, lack of standardization, and limited computational resources.</p>
+<p>The authors present several case studies and examples of successful machine learning applications in agriculture, including precision farming, crop monitoring, and yield prediction. The article concludes with a discussion on the future directions and potential impact of machine learning in agriculture, including the development of new tools and technologies to support sustainable agriculture practices and enhance food security.</p>
+
+
+
+ ]]></description>
+  <category>Machine learning</category>
+  <category>Soil Analysis</category>
+  <category>Yield prediction</category>
+  <guid>https://www.ilovesoils.com/posts/Machine learning in Agriculture/index.html</guid>
+  <pubDate>Thu, 20 Apr 2023 18:30:00 GMT</pubDate>
+  <media:content url="https://www.ilovesoils.com/posts/Machine learning in Agriculture/ML_in_agri.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Digitaliztion of Agriculture</title>
+  <dc:creator>Kunal Khurana</dc:creator>
+  <link>https://www.ilovesoils.com/posts/Digitalization_of_agricluture/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The article- <a href="https://paletteskills.org/resources/the-next-wave-of-agriculture-in-saskatchewan-is-digital-and-indigenous-led">“The next wave of agriculture in Saskatchewan is digital and Indigenous-led”</a> discusses how Indigenous communities in Saskatchewan are utilizing digital technologies to revitalize traditional farming practices.</p>
+<p>While also introducing new techniques to increase crop yields and reduce the impact of climate change and with the use of precision agriculture, remote sensing technologies, and data analysis, these communities are working to improve soil health, increase biodiversity, and foster sustainable practices. The article highlights several Indigenous-led initiatives, such as the One House, Many Nations project and the Whitecap Dakota First Nation’s Regenerative Farming Program, which are helping to promote food sovereignty and economic development in the region. Additionally, these initiatives are providing opportunities for Indigenous youth to learn about their cultural heritage and connect with the land.</p>
+
+
+
+ ]]></description>
+  <category>Digitalization</category>
+  <category>Machine learning</category>
+  <category>AI</category>
+  <guid>https://www.ilovesoils.com/posts/Digitalization_of_agricluture/index.html</guid>
+  <pubDate>Sun, 16 Apr 2023 18:30:00 GMT</pubDate>
+  <media:content url="https://www.ilovesoils.com/posts/Digitalization_of_agricluture/Digitaliztion.png" medium="image" type="image/png" height="86" width="144"/>
+</item>
+</channel>
+</rss>
