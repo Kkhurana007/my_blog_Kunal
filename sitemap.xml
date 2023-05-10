@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.ilovesoils.com/about.html</loc>
-    <lastmod>2023-05-10T18:14:29.751Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ilovesoils.com/index.html</loc>
-    <lastmod>2023-05-10T18:14:31.576Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.ilovesoils.com/posts/Ai_watersaving/index.html</loc>
-    <lastmod>2023-05-10T18:14:32.326Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ilovesoils.com/posts/bamboo_plantation/index.html</loc>
-    <lastmod>2023-05-10T18:14:33.093Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ilovesoils.com/posts/Digitalization_of_agricluture/index.html</loc>
-    <lastmod>2023-05-10T18:14:33.829Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ilovesoils.com/posts/irrigraiton_scheduling/content.html</loc>
-    <lastmod>2023-05-10T18:14:34.477Z</lastmod>
+    <lastmod>2023-05-10T19:35:09.177Z</lastmod>
   </url>
   <url>
     <loc>https://www.ilovesoils.com/posts/Machine learning in Agriculture/index.html</loc>
-    <lastmod>2023-05-10T18:14:35.134Z</lastmod>
+    <lastmod>2023-05-10T19:35:10.029Z</lastmod>
   </url>
   <url>
     <loc>https://www.ilovesoils.com/posts/when_to_water/index.html</loc>
-    <lastmod>2023-05-10T18:14:35.883Z</lastmod>
+    <lastmod>2023-05-10T19:35:10.449Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ilovesoils.com/posts/irrigraiton_scheduling/content.html</loc>
+    <lastmod>2023-05-10T19:35:10.853Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ilovesoils.com/posts/bamboo_plantation/index.html</loc>
+    <lastmod>2023-05-10T19:35:11.245Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ilovesoils.com/posts/Digitalization_of_agricluture/index.html</loc>
+    <lastmod>2023-05-10T19:35:11.641Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ilovesoils.com/about.html</loc>
+    <lastmod>2023-05-10T19:35:12.049Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ilovesoils.com/index.html</loc>
+    <lastmod>2023-05-10T19:35:13.069Z</lastmod>
   </url>
 </urlset>

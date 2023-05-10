@@ -1,5 +1,47 @@
 [
   {
+    "objectID": "posts/Ai_watersaving/index.html",
+    "href": "posts/Ai_watersaving/index.html",
+    "title": "How helpful can AI be in solving the water crisis?",
+    "section": "",
+    "text": "Wasting water, especially in areas in which it is a scarce resource, is a huge headache (and expense) for farmers and food growers worldwide. This article discusses how AI can help improve water irrigation in agriculture. The article notes that agriculture accounts for approximately 70% of global freshwater usage and that water scarcity is becoming an increasingly pressing issue in many parts of the world. By using AI, farmers can optimize their irrigation practices resulting in reduced water consumption but increased crop yields. The article highlights the use of Machine learning, and in particular deep-learning, algorithms to collect and interpret data from images and identify patterns that spotlight irrigation issues. AI can also be used to create predictive models that help farmers anticipate (real-time) crop water needs to identify areas of a field that need more or less water. By using AI in agriculture, farmers can become more efficient and sustainable in their use of water, ultimately helping to address global water scarcity concerns."
+  },
+  {
+    "objectID": "posts/Machine learning in Agriculture/index.html",
+    "href": "posts/Machine learning in Agriculture/index.html",
+    "title": "Machine learning in Agriculture",
+    "section": "",
+    "text": "The article “Machine Learning in Agriculture: A Review” provides a comprehensive overview of the current state and potential applications of machine learning in agriculture.\nThe authors first introduce the concept of machine learning and its various techniques, including supervised, unsupervised, and reinforcement learning. They then provide an overview of the different areas in agriculture where machine learning can be applied, such as crop yield prediction, plant disease diagnosis, soil analysis, and livestock management.\nThe article further explores the use of different types of sensors and data collection techniques that can be used to gather data for machine learning applications in agriculture. The authors also discuss the challenges associated with implementing machine learning in agriculture, such as data quality, lack of standardization, and limited computational resources.\nThe authors present several case studies and examples of successful machine learning applications in agriculture, including precision farming, crop monitoring, and yield prediction. The article concludes with a discussion on the future directions and potential impact of machine learning in agriculture, including the development of new tools and technologies to support sustainable agriculture practices and enhance food security."
+  },
+  {
+    "objectID": "posts/when_to_water/index.html",
+    "href": "posts/when_to_water/index.html",
+    "title": "Can AI decide when to water crops?",
+    "section": "",
+    "text": "In Texas, 2022 was one of the driest years on record. The article in general wishes to tackle the water scarcity problems in agriculture. For that, Texas A&M AgriLife Research and IBM are collaborating to streamline a new low-cost app, similar to Liquid prep, to help farmers determine the optimal time to water their crops. The app, called “When to Water,” combines data from various sources, including soil sensors, crop types, and weather forecasts, to provide customized irrigation recommendations to farmers. The collaboration aims to improve the accuracy and speed of data collection, analysis, and transmission, ultimately helping farmers make more informed decisions about irrigation management."
+  },
+  {
+    "objectID": "posts/irrigraiton_scheduling/content.html",
+    "href": "posts/irrigraiton_scheduling/content.html",
+    "title": "Irrigation scheduling with Machine learning",
+    "section": "",
+    "text": "The paper “Neural Network soil moisture model for irrigration scheduling” proposes an intelligent system for predicting soil moisture and optimizing irrigation scheduling using machine learning algorithms.\nThe proposed system uses a wireless sensor network (WSN) to monitor soil moisture levels and collects data from various sensors installed in the soil. The data collected from the WSN is then processed and analyzed using machine learning algorithms to predict soil moisture levels and determine optimal irrigation schedules.\nThe authors used two machine learning algorithms, support vector regression (SVR) and random forest (RF), to develop the predictive models for soil moisture prediction. The models were trained using data collected from the WSN and validated using real-world data.\nThe results of the study showed that the proposed system is effective in predicting soil moisture levels and optimizing irrigation scheduling. The SVR model outperformed the RF model, achieving a mean absolute error of 0.026 for soil moisture prediction.\nHenceforth, the proposed system provides an automated and intelligent solution for soil moisture prediction and irrigation scheduling, which can help farmers optimize their irrigation practices and reduce water usage."
+  },
+  {
+    "objectID": "posts/bamboo_plantation/index.html",
+    "href": "posts/bamboo_plantation/index.html",
+    "title": "Can bamboo help to solve climate crisis?",
+    "section": "",
+    "text": "The article discusses how bamboo construction can be a sustainable and affordable solution to housing while also helping mitigate climate change. Bamboo is a fast-growing, renewable resource that can be used to build structurally sound buildings that are earthquake-resistant and can withstand extreme weather conditions. Bamboo also has a lower carbon footprint compared to traditional building materials like concrete and steel. The article highlights several examples of successful bamboo construction projects, including a 22-story bamboo skyscraper in Colombia and a village in China where all the houses are made of bamboo. By using bamboo in construction, we can create more eco-friendly and affordable housing options while also reducing carbon emissions."
+  },
+  {
+    "objectID": "posts/Digitalization_of_agricluture/index.html",
+    "href": "posts/Digitalization_of_agricluture/index.html",
+    "title": "Digitaliztion of Agriculture",
+    "section": "",
+    "text": "The article- “The next wave of agriculture in Saskatchewan is digital and Indigenous-led” discusses how Indigenous communities in Saskatchewan are utilizing digital technologies to revitalize traditional farming practices.\nWhile also introducing new techniques to increase crop yields and reduce the impact of climate change and with the use of precision agriculture, remote sensing technologies, and data analysis, these communities are working to improve soil health, increase biodiversity, and foster sustainable practices. The article highlights several Indigenous-led initiatives, such as the One House, Many Nations project and the Whitecap Dakota First Nation’s Regenerative Farming Program, which are helping to promote food sovereignty and economic development in the region. Additionally, these initiatives are providing opportunities for Indigenous youth to learn about their cultural heritage and connect with the land."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -25,48 +67,6 @@
     "href": "index.html",
     "title": "Posts",
     "section": "",
-    "text": "Can bamboo help to solve climate crisis?\n\n\n\n\n\n\n\nAI\n\n\nIrrigation\n\n\nMachine learning\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nCan bamboo help to solve climate crisis?\n\n\n\n\n\n\n\nC\n\n\nBamboo\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nCan AI decide when to water crops?\n\n\n\n\n\n\n\nMachine learning\n\n\nAI\n\n\nIrrigation\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nIrrigation scheduling with Machine learning\n\n\n\n\n\n\n\nMachine learning\n\n\nIrrigation\n\n\nModelling\n\n\n\n\n\n\n\n\n\n\n\nApr 21, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nMachine learning in Agriculture\n\n\n\n\n\n\n\nMachine learning\n\n\nSoil Analysis\n\n\nYield prediction\n\n\n\n\n\n\n\n\n\n\n\nApr 21, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nDigitaliztion of Agriculture\n\n\n\n\n\n\n\nDigitalization\n\n\nMachine learning\n\n\nAI\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/Ai_watersaving/index.html",
-    "href": "posts/Ai_watersaving/index.html",
-    "title": "Can bamboo help to solve climate crisis?",
-    "section": "",
-    "text": "Wasting water, especially in areas in which it is a scarce resource, is a huge headache (and expense) for farmers and food growers worldwide. This article discusses how AI can help improve water irrigation in agriculture. The article notes that agriculture accounts for approximately 70% of global freshwater usage and that water scarcity is becoming an increasingly pressing issue in many parts of the world. By using AI, farmers can optimize their irrigation practices resulting in reduced water consumption but increased crop yields. The article highlights the use of Machine learning, and in particular deep-learning, algorithms to collect and interpret data from images and identify patterns that spotlight irrigation issues. AI can also be used to create predictive models that help farmers anticipate (real-time) crop water needs to identify areas of a field that need more or less water. By using AI in agriculture, farmers can become more efficient and sustainable in their use of water, ultimately helping to address global water scarcity concerns."
-  },
-  {
-    "objectID": "posts/bamboo_plantation/index.html",
-    "href": "posts/bamboo_plantation/index.html",
-    "title": "Can bamboo help to solve climate crisis?",
-    "section": "",
-    "text": "The article discusses how bamboo construction can be a sustainable and affordable solution to housing while also helping mitigate climate change. Bamboo is a fast-growing, renewable resource that can be used to build structurally sound buildings that are earthquake-resistant and can withstand extreme weather conditions. Bamboo also has a lower carbon footprint compared to traditional building materials like concrete and steel. The article highlights several examples of successful bamboo construction projects, including a 22-story bamboo skyscraper in Colombia and a village in China where all the houses are made of bamboo. By using bamboo in construction, we can create more eco-friendly and affordable housing options while also reducing carbon emissions."
-  },
-  {
-    "objectID": "posts/Digitalization_of_agricluture/index.html",
-    "href": "posts/Digitalization_of_agricluture/index.html",
-    "title": "Digitaliztion of Agriculture",
-    "section": "",
-    "text": "The article- “The next wave of agriculture in Saskatchewan is digital and Indigenous-led” discusses how Indigenous communities in Saskatchewan are utilizing digital technologies to revitalize traditional farming practices.\nWhile also introducing new techniques to increase crop yields and reduce the impact of climate change and with the use of precision agriculture, remote sensing technologies, and data analysis, these communities are working to improve soil health, increase biodiversity, and foster sustainable practices. The article highlights several Indigenous-led initiatives, such as the One House, Many Nations project and the Whitecap Dakota First Nation’s Regenerative Farming Program, which are helping to promote food sovereignty and economic development in the region. Additionally, these initiatives are providing opportunities for Indigenous youth to learn about their cultural heritage and connect with the land."
-  },
-  {
-    "objectID": "posts/irrigraiton_scheduling/content.html",
-    "href": "posts/irrigraiton_scheduling/content.html",
-    "title": "Irrigation scheduling with Machine learning",
-    "section": "",
-    "text": "The paper “Neural Network soil moisture model for irrigration scheduling” proposes an intelligent system for predicting soil moisture and optimizing irrigation scheduling using machine learning algorithms.\nThe proposed system uses a wireless sensor network (WSN) to monitor soil moisture levels and collects data from various sensors installed in the soil. The data collected from the WSN is then processed and analyzed using machine learning algorithms to predict soil moisture levels and determine optimal irrigation schedules.\nThe authors used two machine learning algorithms, support vector regression (SVR) and random forest (RF), to develop the predictive models for soil moisture prediction. The models were trained using data collected from the WSN and validated using real-world data.\nThe results of the study showed that the proposed system is effective in predicting soil moisture levels and optimizing irrigation scheduling. The SVR model outperformed the RF model, achieving a mean absolute error of 0.026 for soil moisture prediction.\nHenceforth, the proposed system provides an automated and intelligent solution for soil moisture prediction and irrigation scheduling, which can help farmers optimize their irrigation practices and reduce water usage."
-  },
-  {
-    "objectID": "posts/Machine learning in Agriculture/index.html",
-    "href": "posts/Machine learning in Agriculture/index.html",
-    "title": "Machine learning in Agriculture",
-    "section": "",
-    "text": "The article “Machine Learning in Agriculture: A Review” provides a comprehensive overview of the current state and potential applications of machine learning in agriculture.\nThe authors first introduce the concept of machine learning and its various techniques, including supervised, unsupervised, and reinforcement learning. They then provide an overview of the different areas in agriculture where machine learning can be applied, such as crop yield prediction, plant disease diagnosis, soil analysis, and livestock management.\nThe article further explores the use of different types of sensors and data collection techniques that can be used to gather data for machine learning applications in agriculture. The authors also discuss the challenges associated with implementing machine learning in agriculture, such as data quality, lack of standardization, and limited computational resources.\nThe authors present several case studies and examples of successful machine learning applications in agriculture, including precision farming, crop monitoring, and yield prediction. The article concludes with a discussion on the future directions and potential impact of machine learning in agriculture, including the development of new tools and technologies to support sustainable agriculture practices and enhance food security."
-  },
-  {
-    "objectID": "posts/when_to_water/index.html",
-    "href": "posts/when_to_water/index.html",
-    "title": "Can AI decide when to water crops?",
-    "section": "",
-    "text": "In Texas, 2022 was one of the driest years on record. The article in general wishes to tackle the water scarcity problems in agriculture. For that, Texas A&M AgriLife Research and IBM are collaborating to streamline a new low-cost app, similar to Liquid prep, to help farmers determine the optimal time to water their crops. The app, called “When to Water,” combines data from various sources, including soil sensors, crop types, and weather forecasts, to provide customized irrigation recommendations to farmers. The collaboration aims to improve the accuracy and speed of data collection, analysis, and transmission, ultimately helping farmers make more informed decisions about irrigation management."
+    "text": "How helpful can AI be in solving the water crisis?\n\n\n\n\n\n\n\nAI\n\n\nIrrigation\n\n\nMachine learning\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nCan AI decide when to water crops?\n\n\n\n\n\n\n\nMachine learning\n\n\nAI\n\n\nIrrigation\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nCan bamboo help to solve climate crisis?\n\n\n\n\n\n\n\nC\n\n\nBamboo\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nMachine learning in Agriculture\n\n\n\n\n\n\n\nMachine learning\n\n\nSoil Analysis\n\n\nYield prediction\n\n\n\n\n\n\n\n\n\n\n\nApr 21, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nIrrigation scheduling with Machine learning\n\n\n\n\n\n\n\nMachine learning\n\n\nIrrigation\n\n\nModelling\n\n\n\n\n\n\n\n\n\n\n\nApr 21, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nDigitaliztion of Agriculture\n\n\n\n\n\n\n\nDigitalization\n\n\nMachine learning\n\n\nAI\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\nNo matching items"
   }
 ]
