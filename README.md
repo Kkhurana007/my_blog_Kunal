@@ -1,7 +1,7 @@
 # Personal_blog// Kunal Khurana
 
 It's a 2-in-1 site: it's personal, and it shows soils and agricutural related works being around the globe with the help of AI. 
-## Features
+## Navigation
 
 ### Homepage
 
@@ -18,7 +18,7 @@ possible from a single markdown file! From websites to presentations to books!
 
 ## Reference
 
-This website uses many of Quarto features, and as such, can be used as a reference guide for how to implement such features yourself. Check these URL's to know more-
+This website uses many of Quarto features and can be used as a reference guide to learn interesting stuff by practicing it yourself. Check these URL's to know more-
 https://quarto.org/
 https://nbdev.fast.ai/
 
