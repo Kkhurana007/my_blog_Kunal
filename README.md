@@ -19,7 +19,7 @@ possible from a single markdown file! From websites to presentations to books!
 
 ## Reference
 
-[This website uses many of Quarto features, and as such, can be used as a reference guide for how to implement such features yourself. Check these URL's below to know more-]
+This website uses many of Quarto features, and as such, can be used as a reference guide for how to implement such features yourself. Check these URL's below to know more-
 (https://quarto.org/)
 https://nbdev.fast.ai/
 
