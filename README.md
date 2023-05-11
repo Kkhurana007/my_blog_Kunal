@@ -7,6 +7,9 @@ It's a 2-in-1 site: it's personal, and it shows soils and agricutural related wo
 
 The homepage consists of posts and links to certain machine learning and data analytics notebooks (i'll update these soon) that could be of some help to someone who wish to study code and do some statistical analysis.
 
+### About
+
+The about page shows my education and prior work experience. This also contains links to other social platforms that i use oftentimes. 
 
 ## Quarto
 
