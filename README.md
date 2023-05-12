@@ -19,6 +19,6 @@ possible from a single markdown file! From websites to presentations to books!
 ## Reference
 
 This website uses many of Quarto features and can be used as a reference guide to learn interesting stuff by practicing it yourself. Check these URL's to know more-
-https://quarto.org/
-https://nbdev.fast.ai/
+1. https://quarto.org/
+2. https://nbdev.fast.ai/
 
