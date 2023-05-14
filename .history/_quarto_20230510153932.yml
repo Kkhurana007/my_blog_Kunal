@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Homepage"
+  site-url: https://www.ilovesoils.com
+  description: "Personal blog"
+  margin-header: subscribe.html
+  
+  navbar:
+    background: primary
+    search: true
+    
+    right:
+      - about.qmd 
+      - icon: rss
+        href: index.xml
+      - icon: github
+        href: https://github.com/Kkhurana007
+      - icon: twitter
+        href: https://twitter.com/kunalkhurana007
+execute:
+  freeze: auto  # re-render only when source changes
+format:
+  html:
+    theme: united
+    css: styles.css
+
+
+
+

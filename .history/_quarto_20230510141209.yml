@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Homepage"
+  site-url: https://www.ilovesoils.com
+  description: "Personal blog"
+  margin-header: subscribe.html
+  
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "MACHINE LEARNING"
+        file: machinelearning.qmd
+      - text: "DATA ANALYSIS"
+        file: dataanalysis.qmd
+      - text: "DATA VISUALISATIONS"
+        file: datavisualisations.qmd
+
+    sidebar:
+    - title: "MACHINE LEARNING"
+      style: "docked"
+      background: light
+      contents:
+        - Gathering_data.qmd
+        - Data_prepration.qmd
+        - Data_wrangling.qmd
+        - Data_analysis.qmd
+        - Training_the_model.qmd
+        - Deployment.qmd
+
+    right:
+      - about.qmd 
+      - icon: rss
+        href: index.xml
+      - icon: github
+        href: https://github.com/Kkhurana007
+      - icon: twitter
+        href: https://twitter.com/kunalkhurana007
+execute:
+  freeze: auto  # re-render only when source changes
+format:
+  html:
+    theme: united
+    css: styles.css
+
+
+
+
