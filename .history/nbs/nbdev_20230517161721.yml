@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "my_blog_Kunal"
+  site-url: "https://ilovesoils.com/"
+  description: "My_personal_blog"
+  repo-branch: main
+  repo-url: "https://github.com/Kkhurana007/my_blog_Kunal"
