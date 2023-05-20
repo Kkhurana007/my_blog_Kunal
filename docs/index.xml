@@ -144,5 +144,91 @@
   <pubDate>Mon, 17 Apr 2023 04:00:00 GMT</pubDate>
   <media:content url="https://www.ilovesoils.com/posts/Digitalization_of_agricluture/Digitaliztion.png" medium="image" type="image/png" height="86" width="144"/>
 </item>
+<item>
+  <title>Quarto Basics</title>
+  <link>https://www.ilovesoils.com/posts/sample_ipynb/hello.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="polar-axis" class="level2">
+<h2 class="anchored" data-anchor-id="polar-axis">Polar Axis</h2>
+<p>For a demonstration of a line plot on a polar axis, see Figure&nbsp;1.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb1-3"></span>
+<span id="cb1-4">r <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.arange(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.01</span>)</span>
+<span id="cb1-5">theta <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> np.pi <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> r</span>
+<span id="cb1-6">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots(</span>
+<span id="cb1-7">  subplot_kw <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'projection'</span>: <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'polar'</span>} </span>
+<span id="cb1-8">)</span>
+<span id="cb1-9">ax.plot(theta, r)</span>
+<span id="cb1-10">ax.set_rticks([<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.5</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>])</span>
+<span id="cb1-11">ax.grid(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb1-12">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="fig-polar" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://www.ilovesoils.com/posts/sample_ipynb/hello_files/figure-html/fig-polar-output-1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: A line plot on a polar axis</figcaption>
+</figure>
+</div>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://www.ilovesoils.com/posts/sample_ipynb/hello.html</guid>
+  <pubDate>Sat, 20 May 2023 19:57:19 GMT</pubDate>
+</item>
 </channel>
 </rss>

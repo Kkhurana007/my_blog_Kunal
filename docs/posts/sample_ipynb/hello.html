@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Homepage - Posts</title>
+<title>Homepage - Quarto Basics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,41 +92,10 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Homepage" href="index.xml"></head>
+<link rel="stylesheet" href="../../styles.css">
+</head>
 
 <body class="nav-fixed">
 
@@ -103,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Homepage</span>
     </a>
   </div>
@@ -114,11 +115,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml" rel="" target=""><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../index.xml" rel="" target=""><i class="bi bi-rss" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -142,8 +143,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Posts</h1>
+    <div class="quarto-title column-body">
+      <h1 class="title">Quarto Basics</h1>
                       </div>
   </div>
     
@@ -156,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
@@ -355,288 +356,46 @@ ul.task-list li input[type="checkbox"] {
 
 </div></div>
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="AI">AI <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Bamboo">Bamboo <span class="quarto-category-count">(1)</span></div><div class="category" data-category="C">C <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Digitalization">Digitalization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Irrigation">Irrigation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Machine learning">Machine learning <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Modelling">Modelling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Soil Analysis">Soil Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Yield prediction">Yield prediction <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
+<section id="polar-axis" class="level2">
+<h2 class="anchored" data-anchor-id="polar-axis">Polar Axis</h2>
+<p>For a demonstration of a line plot on a polar axis, see <a href="#fig-polar">Figure&nbsp;1</a>.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>} </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>ax.plot(theta, r)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="fig-polar" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="hello_files/figure-html/fig-polar-output-1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: A line plot on a polar axis</figcaption>
+</figure>
+</div>
+</div>
+</div>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1684611968516" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/sample_ipynb/hello.html"> <p class="card-img-top"><img src="posts\sample_ipynb\hello_files\figure-html\fig-polar-output-1.png"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="./posts/sample_ipynb/hello.html">
-<h3 class="no-anchor listing-title">
-Quarto Basics
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-For a demonstration of a line plot on a polar axis, see Figure&nbsp;1.
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/sample_ipynb/hello.html"> </a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="AI,Irrigation,Machine learning" data-listing-date-sort="1683604800000" data-listing-file-modified-sort="1684610941122" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/Ai_watersaving/index.html"> <img src="./posts/Ai_watersaving/ai_water_saving.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/Ai_watersaving/index.html">
-<h3 class="no-anchor listing-title">
-How helpful can AI be in solving the water crisis?
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('AI'); return false;">
-AI
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Irrigation'); return false;">
-Irrigation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Machine learning'); return false;">
-Machine learning
-</div>
-</div>
-<a href="./posts/Ai_watersaving/index.html">
-<div class="listing-description">
-Wasting water, especially in areas in which it is a scarce resource, is a huge headache (and expense) for farmers and food growers worldwide. This article discusses how AI can help improve water irrigation in agriculture. The article notes that agriculture accounts for approximately 70% of global freshwater usage and that…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Ai_watersaving/index.html">
-<div class="listing-date">
-May 9, 2023
-</div>
-<div class="listing-author">
-Kunal Khurana
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="C,Bamboo" data-listing-date-sort="1683604800000" data-listing-file-modified-sort="1684610941137" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/bamboo_plantation/index.html"> <img src="./posts/bamboo_plantation/bamboo.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/bamboo_plantation/index.html">
-<h3 class="no-anchor listing-title">
-Can bamboo help to solve climate crisis?
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('C'); return false;">
-C
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Bamboo'); return false;">
-Bamboo
-</div>
-</div>
-<a href="./posts/bamboo_plantation/index.html">
-<div class="listing-description">
-The article discusses how bamboo construction can be a sustainable and affordable solution to housing while also helping mitigate climate change. Bamboo is a fast-growing, renewable…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/bamboo_plantation/index.html">
-<div class="listing-date">
-May 9, 2023
-</div>
-<div class="listing-author">
-Kunal Khurana
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Machine learning,AI,Irrigation" data-listing-date-sort="1683604800000" data-listing-file-modified-sort="1684610941141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/when_to_water/index.html"> <img src="./posts/when_to_water/ai-based-irrigation-solutions-banner-new.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/when_to_water/index.html">
-<h3 class="no-anchor listing-title">
-Can AI decide when to water crops?
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Machine learning'); return false;">
-Machine learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('AI'); return false;">
-AI
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Irrigation'); return false;">
-Irrigation
-</div>
-</div>
-<a href="./posts/when_to_water/index.html">
-<div class="listing-description">
-In Texas, 2022 was one of the driest years on record. The article in general wishes to tackle the water scarcity problems in…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/when_to_water/index.html">
-<div class="listing-date">
-May 9, 2023
-</div>
-<div class="listing-author">
-Kunal Khurana
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Machine learning,Irrigation,Modelling" data-listing-date-sort="1682049600000" data-listing-file-modified-sort="1684610941139" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/irrigraiton_scheduling/content.html"> <img src="./posts/irrigraiton_scheduling/Irrigation_scheduling.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/irrigraiton_scheduling/content.html">
-<h3 class="no-anchor listing-title">
-Irrigation scheduling with Machine learning
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Machine learning'); return false;">
-Machine learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Irrigation'); return false;">
-Irrigation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Modelling'); return false;">
-Modelling
-</div>
-</div>
-<a href="./posts/irrigraiton_scheduling/content.html">
-<div class="listing-description">
-The paper “Neural Network soil moisture model for irrigration scheduling” proposes an intelligent…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/irrigraiton_scheduling/content.html">
-<div class="listing-date">
-Apr 21, 2023
-</div>
-<div class="listing-author">
-Kunal Khurana
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="Machine learning,Soil Analysis,Yield prediction" data-listing-date-sort="1682049600000" data-listing-file-modified-sort="1684610941127" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/Machine learning in Agriculture/index.html"> <img src="./posts/Machine learning in Agriculture/ML_in_agri.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/Machine learning in Agriculture/index.html">
-<h3 class="no-anchor listing-title">
-Machine learning in Agriculture
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Machine learning'); return false;">
-Machine learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Soil Analysis'); return false;">
-Soil Analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Yield prediction'); return false;">
-Yield prediction
-</div>
-</div>
-<a href="./posts/Machine learning in Agriculture/index.html">
-<div class="listing-description">
-The article “Machine Learning in Agriculture: A Review” provides a comprehensive overview of the current state and potential applications of machine learning in agriculture.
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Machine learning in Agriculture/index.html">
-<div class="listing-date">
-Apr 21, 2023
-</div>
-<div class="listing-author">
-Kunal Khurana
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="Digitalization,Machine learning,AI" data-listing-date-sort="1681704000000" data-listing-file-modified-sort="1684610941125" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/Digitalization_of_agricluture/index.html"> <img src="./posts/Digitalization_of_agricluture/Digitaliztion.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/Digitalization_of_agricluture/index.html">
-<h3 class="no-anchor listing-title">
-Digitaliztion of Agriculture
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Digitalization'); return false;">
-Digitalization
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Machine learning'); return false;">
-Machine learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('AI'); return false;">
-AI
-</div>
-</div>
-<a href="./posts/Digitalization_of_agricluture/index.html">
-<div class="listing-description">
-The article- “The next wave of agriculture in Saskatchewan is digital and Indigenous-led” discusses how Indigenous communities in…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Digitalization_of_agricluture/index.html">
-<div class="listing-date">
-Apr 17, 2023
-</div>
-<div class="listing-author">
-Kunal Khurana
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

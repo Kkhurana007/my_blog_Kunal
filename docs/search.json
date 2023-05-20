@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "Posts",
     "section": "",
-    "text": "How helpful can AI be in solving the water crisis?\n\n\n\n\n\n\n\nAI\n\n\nIrrigation\n\n\nMachine learning\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nCan bamboo help to solve climate crisis?\n\n\n\n\n\n\n\nC\n\n\nBamboo\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nCan AI decide when to water crops?\n\n\n\n\n\n\n\nMachine learning\n\n\nAI\n\n\nIrrigation\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nIrrigation scheduling with Machine learning\n\n\n\n\n\n\n\nMachine learning\n\n\nIrrigation\n\n\nModelling\n\n\n\n\n\n\n\n\n\n\n\nApr 21, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nMachine learning in Agriculture\n\n\n\n\n\n\n\nMachine learning\n\n\nSoil Analysis\n\n\nYield prediction\n\n\n\n\n\n\n\n\n\n\n\nApr 21, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nDigitaliztion of Agriculture\n\n\n\n\n\n\n\nDigitalization\n\n\nMachine learning\n\n\nAI\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\nNo matching items"
+    "text": "Quarto Basics\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nHow helpful can AI be in solving the water crisis?\n\n\n\n\n\n\n\nAI\n\n\nIrrigation\n\n\nMachine learning\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nCan bamboo help to solve climate crisis?\n\n\n\n\n\n\n\nC\n\n\nBamboo\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nCan AI decide when to water crops?\n\n\n\n\n\n\n\nMachine learning\n\n\nAI\n\n\nIrrigation\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nIrrigation scheduling with Machine learning\n\n\n\n\n\n\n\nMachine learning\n\n\nIrrigation\n\n\nModelling\n\n\n\n\n\n\n\n\n\n\n\nApr 21, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nMachine learning in Agriculture\n\n\n\n\n\n\n\nMachine learning\n\n\nSoil Analysis\n\n\nYield prediction\n\n\n\n\n\n\n\n\n\n\n\nApr 21, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nDigitaliztion of Agriculture\n\n\n\n\n\n\n\nDigitalization\n\n\nMachine learning\n\n\nAI\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "nbs/00_core.html",
@@ -89,6 +89,20 @@
     "title": "Machine learning in Agriculture",
     "section": "",
     "text": "The article “Machine Learning in Agriculture: A Review” provides a comprehensive overview of the current state and potential applications of machine learning in agriculture.\nThe authors first introduce the concept of machine learning and its various techniques, including supervised, unsupervised, and reinforcement learning. They then provide an overview of the different areas in agriculture where machine learning can be applied, such as crop yield prediction, plant disease diagnosis, soil analysis, and livestock management.\nThe article further explores the use of different types of sensors and data collection techniques that can be used to gather data for machine learning applications in agriculture. The authors also discuss the challenges associated with implementing machine learning in agriculture, such as data quality, lack of standardization, and limited computational resources.\nThe authors present several case studies and examples of successful machine learning applications in agriculture, including precision farming, crop monitoring, and yield prediction. The article concludes with a discussion on the future directions and potential impact of machine learning in agriculture, including the development of new tools and technologies to support sustainable agriculture practices and enhance food security."
+  },
+  {
+    "objectID": "posts/sample_ipynb/hello.html",
+    "href": "posts/sample_ipynb/hello.html",
+    "title": "Quarto Basics",
+    "section": "",
+    "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
+  },
+  {
+    "objectID": "posts/sample_ipynb/hello.html#polar-axis",
+    "href": "posts/sample_ipynb/hello.html#polar-axis",
+    "title": "Quarto Basics",
+    "section": "",
+    "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
   },
   {
     "objectID": "posts/when_to_water/index.html",

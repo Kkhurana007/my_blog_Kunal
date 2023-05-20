@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/sample_ipynb/hello.html",
       "/posts/Ai_watersaving/index.html",
       "/posts/bamboo_plantation/index.html",
       "/posts/when_to_water/index.html",
