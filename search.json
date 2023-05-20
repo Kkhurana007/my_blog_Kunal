@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Posts",
     "section": "",
-    "text": "Can bamboo help to solve climate crisis?\n\n\n\n\n\n\n\nC\n\n\nBamboo\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nCan AI decide when to water crops?\n\n\n\n\n\n\n\nMachine learning\n\n\nAI\n\n\nIrrigation\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nHow helpful can AI be in solving the water crisis?\n\n\n\n\n\n\n\nAI\n\n\nIrrigation\n\n\nMachine learning\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nMachine learning in Agriculture\n\n\n\n\n\n\n\nMachine learning\n\n\nSoil Analysis\n\n\nYield prediction\n\n\n\n\n\n\n\n\n\n\n\nApr 21, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nIrrigation scheduling with Machine learning\n\n\n\n\n\n\n\nMachine learning\n\n\nIrrigation\n\n\nModelling\n\n\n\n\n\n\n\n\n\n\n\nApr 21, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nDigitaliztion of Agriculture\n\n\n\n\n\n\n\nDigitalization\n\n\nMachine learning\n\n\nAI\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\nNo matching items"
+    "text": "Quarto Basics\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nCan bamboo help to solve climate crisis?\n\n\n\n\n\n\n\nC\n\n\nBamboo\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nCan AI decide when to water crops?\n\n\n\n\n\n\n\nMachine learning\n\n\nAI\n\n\nIrrigation\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nHow helpful can AI be in solving the water crisis?\n\n\n\n\n\n\n\nAI\n\n\nIrrigation\n\n\nMachine learning\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nMachine learning in Agriculture\n\n\n\n\n\n\n\nMachine learning\n\n\nSoil Analysis\n\n\nYield prediction\n\n\n\n\n\n\n\n\n\n\n\nApr 21, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nIrrigation scheduling with Machine learning\n\n\n\n\n\n\n\nMachine learning\n\n\nIrrigation\n\n\nModelling\n\n\n\n\n\n\n\n\n\n\n\nApr 21, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\n  \n\n\n\n\nDigitaliztion of Agriculture\n\n\n\n\n\n\n\nDigitalization\n\n\nMachine learning\n\n\nAI\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nKunal Khurana\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/bamboo_plantation/index.html",
@@ -19,6 +19,20 @@
     "title": "Can AI decide when to water crops?",
     "section": "",
     "text": "In Texas, 2022 was one of the driest years on record. The article in general wishes to tackle the water scarcity problems in agriculture. For that, Texas A&M AgriLife Research and IBM are collaborating to streamline a new low-cost app, similar to Liquid prep, to help farmers determine the optimal time to water their crops. The app, called “When to Water,” combines data from various sources, including soil sensors, crop types, and weather forecasts, to provide customized irrigation recommendations to farmers. The collaboration aims to improve the accuracy and speed of data collection, analysis, and transmission, ultimately helping farmers make more informed decisions about irrigation management."
+  },
+  {
+    "objectID": "posts/sample_ipynb/hello.html",
+    "href": "posts/sample_ipynb/hello.html",
+    "title": "Quarto Basics",
+    "section": "",
+    "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
+  },
+  {
+    "objectID": "posts/sample_ipynb/hello.html#polar-axis",
+    "href": "posts/sample_ipynb/hello.html#polar-axis",
+    "title": "Quarto Basics",
+    "section": "",
+    "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
   },
   {
     "objectID": "posts/Digitalization_of_agricluture/index.html",
