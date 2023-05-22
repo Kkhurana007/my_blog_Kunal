@@ -10,7 +10,248 @@
 <atom:link href="https://www.ilovesoils.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Personal blog</description>
 <generator>quarto-1.3.353</generator>
-<lastBuildDate>Sat, 20 May 2023 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 22 May 2023 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Quarto Computations</title>
+  <link>https://www.ilovesoils.com/posts/qmd_computations/computations.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="numpy" class="level2">
+<h2 class="anchored" data-anchor-id="numpy">NumPy</h2>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb1-2">a <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.arange(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span>).reshape(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>)</span>
+<span id="cb1-3">a</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<pre><code>array([[ 0,  1,  2,  3,  4],
+       [ 5,  6,  7,  8,  9],
+       [10, 11, 12, 13, 14]])</code></pre>
+</div>
+</div>
+</section>
+<section id="matplotlib" class="level2">
+<h2 class="anchored" data-anchor-id="matplotlib">Matplotlib</h2>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb3-2"></span>
+<span id="cb3-3">fig <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.figure()</span>
+<span id="cb3-4">x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.arange(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>)</span>
+<span id="cb3-5">y <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2.5</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> np.sin(x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">20</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> np.pi)</span>
+<span id="cb3-6">yerr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.linspace(<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.05</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.2</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>)</span>
+<span id="cb3-7"></span>
+<span id="cb3-8">plt.errorbar(x, y <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, yerr<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>yerr, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'both limits (default)'</span>)</span>
+<span id="cb3-9">plt.errorbar(x, y <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, yerr<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>yerr, uplims<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'uplims=True'</span>)</span>
+<span id="cb3-10">plt.errorbar(x, y <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, yerr<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>yerr, uplims<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>, lolims<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>,</span>
+<span id="cb3-11">             label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'uplims=True, lolims=True'</span>)</span>
+<span id="cb3-12"></span>
+<span id="cb3-13">upperlimits <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>, <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span></span>
+<span id="cb3-14">lowerlimits <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span>, <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span></span>
+<span id="cb3-15">plt.errorbar(x, y, yerr<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>yerr, uplims<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>upperlimits, lolims<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>lowerlimits,</span>
+<span id="cb3-16">             label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'subsets of uplims and lolims'</span>)</span>
+<span id="cb3-17"></span>
+<span id="cb3-18">plt.legend(loc<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'lower right'</span>)</span>
+<span id="cb3-19">plt.show(fig)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="https://www.ilovesoils.com/posts/qmd_computations/computations_files/figure-html/cell-3-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="plotly" class="level2">
+<h2 class="anchored" data-anchor-id="plotly">Plotly</h2>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> plotly.express <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> px</span>
+<span id="cb4-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> plotly.io <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pio</span>
+<span id="cb4-3">gapminder <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> px.data.gapminder()</span>
+<span id="cb4-4">gapminder2007 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> gapminder.query(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"year == 2007"</span>)</span>
+<span id="cb4-5">fig <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> px.scatter(gapminder2007, </span>
+<span id="cb4-6">                 x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gdpPercap"</span>, y<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"lifeExp"</span>, color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"continent"</span>, </span>
+<span id="cb4-7">                 size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"pop"</span>, size_max<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">60</span>,</span>
+<span id="cb4-8">                 hover_name<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"country"</span>)</span>
+<span id="cb4-9">fig.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-error">
+<pre><code>ModuleNotFoundError: No module named 'plotly'</code></pre>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>packages</category>
+  <category>data</category>
+  <guid>https://www.ilovesoils.com/posts/qmd_computations/computations.html</guid>
+  <pubDate>Mon, 22 May 2023 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Quarto Basics</title>
   <link>https://www.ilovesoils.com/posts/sample_ipynb/hello.html</link>
@@ -98,6 +339,1838 @@ font-style: inherit;">True</span>)</span>
   <category>data</category>
   <guid>https://www.ilovesoils.com/posts/sample_ipynb/hello.html</guid>
   <pubDate>Sat, 20 May 2023 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Titanic dataset analysis using Pandas and Numpy</title>
+  <dc:creator>Nonu Singh</dc:creator>
+  <link>https://www.ilovesoils.com/posts/qmd_titanic/titanic.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<blockquote class="blockquote">
+<p>This notebook follows the <a href="https://docs.fast.ai/dev/style.html#style-guide">fastai style conventions</a>.</p>
+</blockquote>
+<section id="importnig-packages" class="level2">
+<h2 class="anchored" data-anchor-id="importnig-packages">Importnig packages</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span></code></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span></code></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> scipy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> stats, integrate</span>
+<span id="cb3-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> scipy</span>
+<span id="cb3-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb3-4"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> seaborn <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> sns</span>
+<span id="cb3-5">sns.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">set</span>(color_codes<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb3-6"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span>pylab inline</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Populating the interactive namespace from numpy and matplotlib</code></pre>
+</div>
+</div>
+</section>
+<section id="problem-statement" class="level2">
+<h2 class="anchored" data-anchor-id="problem-statement">Problem Statement</h2>
+<section id="what-is-the-dependent-variable-and-what-are-the-factors-in-this-data-who-had-more-chances-of-survival-what-are-the-factors" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-the-dependent-variable-and-what-are-the-factors-in-this-data-who-had-more-chances-of-survival-what-are-the-factors">What is the dependent variable and what are the factors in this data? Who had more chances of survival, what are the factors?</h3>
+<p>Data exploration section will investigate the dependent variable ‘Survived’ and understand the relationship of factors such as being a female, or child, or being in a certain class, or having sibling/spouse, parent/child affect the survival rate. We will also come up with a hypothesis and test it.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">data <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> pd.read_csv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Titanic.csv'</span>)</span></code></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1">data.head()</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">PassengerId</th>
+<th data-quarto-table-cell-role="th">Survived</th>
+<th data-quarto-table-cell-role="th">Pclass</th>
+<th data-quarto-table-cell-role="th">Name</th>
+<th data-quarto-table-cell-role="th">Sex</th>
+<th data-quarto-table-cell-role="th">Age</th>
+<th data-quarto-table-cell-role="th">SibSp</th>
+<th data-quarto-table-cell-role="th">Parch</th>
+<th data-quarto-table-cell-role="th">Ticket</th>
+<th data-quarto-table-cell-role="th">Fare</th>
+<th data-quarto-table-cell-role="th">Cabin</th>
+<th data-quarto-table-cell-role="th">Embarked</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>Braund, Mr. Owen Harris</td>
+<td>male</td>
+<td>22.0</td>
+<td>1</td>
+<td>0</td>
+<td>A/5 21171</td>
+<td>7.2500</td>
+<td>NaN</td>
+<td>S</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>Cumings, Mrs. John Bradley (Florence Briggs Th...</td>
+<td>female</td>
+<td>38.0</td>
+<td>1</td>
+<td>0</td>
+<td>PC 17599</td>
+<td>71.2833</td>
+<td>C85</td>
+<td>C</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>Heikkinen, Miss. Laina</td>
+<td>female</td>
+<td>26.0</td>
+<td>0</td>
+<td>0</td>
+<td>STON/O2. 3101282</td>
+<td>7.9250</td>
+<td>NaN</td>
+<td>S</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>Futrelle, Mrs. Jacques Heath (Lily May Peel)</td>
+<td>female</td>
+<td>35.0</td>
+<td>1</td>
+<td>0</td>
+<td>113803</td>
+<td>53.1000</td>
+<td>C123</td>
+<td>S</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>5</td>
+<td>0</td>
+<td>3</td>
+<td>Allen, Mr. William Henry</td>
+<td>male</td>
+<td>35.0</td>
+<td>0</td>
+<td>0</td>
+<td>373450</td>
+<td>8.0500</td>
+<td>NaN</td>
+<td>S</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="data-wrangling" class="level2">
+<h2 class="anchored" data-anchor-id="data-wrangling">Data Wrangling</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1">data.info()</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 12 columns):
+PassengerId    891 non-null int64
+Survived       891 non-null int64
+Pclass         891 non-null int64
+Name           891 non-null object
+Sex            891 non-null object
+Age            714 non-null float64
+SibSp          891 non-null int64
+Parch          891 non-null int64
+Ticket         891 non-null object
+Fare           891 non-null float64
+Cabin          204 non-null object
+Embarked       889 non-null object
+dtypes: float64(2), int64(5), object(5)
+memory usage: 66.2+ KB</code></pre>
+</div>
+</div>
+<p>The titanic data given has 891 rows, most of the columns have 891 rows except Age, Cabin and Embarked.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Cabin'</span>].describe())</span>
+<span id="cb9-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Embarked'</span>].describe())</span>
+<span id="cb9-3"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Age'</span>].describe())</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>count         204
+unique        147
+top       B96 B98
+freq            4
+Name: Cabin, dtype: object
+count     889
+unique      3
+top         S
+freq      644
+Name: Embarked, dtype: object
+count    714.000000
+mean      29.699118
+std       14.526497
+min        0.420000
+25%       20.125000
+50%       28.000000
+75%       38.000000
+max       80.000000
+Name: Age, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1">data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Cabin'</span>].value_counts().plot(kind <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'bar'</span>, figsize<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>))</span>
+<span id="cb11-2">sns.plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Frequency/Counts by Cabin'</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;matplotlib.text.Text&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="https://www.ilovesoils.com/posts/qmd_titanic/titanic_files/figure-html/cell-9-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Cabin has 147 unique values for 204 rows, Max freq is 4. It is difficult to draw conclusion on this data and since it has just 22.8% of rows, I will be dropping this column from any further analysis. Also PassengerId does not give me any useful information, so I will drop that column as well</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">del</span> data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Cabin'</span>]</span>
+<span id="cb13-2"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">del</span> data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'PassengerId'</span>]</span></code></pre></div>
+</div>
+<p>Let us also drop the rows with missing values for Age and Embarked now</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1">data.dropna(subset <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Embarked'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Age'</span>], inplace <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span></code></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1">data.info()</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+Int64Index: 712 entries, 0 to 890
+Data columns (total 10 columns):
+Survived    712 non-null int64
+Pclass      712 non-null int64
+Name        712 non-null object
+Sex         712 non-null object
+Age         712 non-null float64
+SibSp       712 non-null int64
+Parch       712 non-null int64
+Ticket      712 non-null object
+Fare        712 non-null float64
+Embarked    712 non-null object
+dtypes: float64(2), int64(4), object(4)
+memory usage: 50.1+ KB</code></pre>
+</div>
+</div>
+<p>Pclass should not be numeric, so let us update it to upper, middle and lower class. For that, we need to look at its relationship with Fare</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1">sns.barplot(x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Pclass"</span>, y<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Fare"</span>, data<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>data)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb17-2">sns.plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Pclass by Mean Fare'</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;matplotlib.text.Text&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="https://www.ilovesoils.com/posts/qmd_titanic/titanic_files/figure-html/cell-13-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Mean Fare of Pclass 1 was 88 dollars, Pclass 2 was 21.47 dollars and Pclass 3 was 13.22 dollars, so let us update the values of Pclass to ‘Upper’ for Class 1, ‘Middle’ for Class 2 and ‘Lower’ for Class 3</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1">data.loc[data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Pclass'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Pclass'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Upper'</span></span>
+<span id="cb19-2">data.loc[data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Pclass'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Pclass'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Middle'</span></span>
+<span id="cb19-3">data.loc[data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Pclass'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Pclass'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Lower'</span></span></code></pre></div>
+</div>
+</section>
+<section id="data-exploration" class="level2">
+<h2 class="anchored" data-anchor-id="data-exploration">Data Exploration</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Distribution of numeric variables</span></span>
+<span id="cb20-2">fig, (ax1, ax2, ax3, ax4) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots(ncols<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>, figsize <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>))</span>
+<span id="cb20-3">data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Age'</span>].plot(kind <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'hist'</span>, bins <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">25</span>, ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax1)</span>
+<span id="cb20-4">ax1.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Age'</span>)</span>
+<span id="cb20-5">data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Fare'</span>].plot(kind <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'hist'</span>, bins<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">25</span>, ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax2)</span>
+<span id="cb20-6">ax2.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Fare'</span>)</span>
+<span id="cb20-7">data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Parch'</span>].plot(kind <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'hist'</span>, ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax3)</span>
+<span id="cb20-8">ax3.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Parch'</span>)</span>
+<span id="cb20-9">data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SibSp'</span>].plot(kind <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'hist'</span>, ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax4)</span>
+<span id="cb20-10">ax4.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SibSp'</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;matplotlib.text.Text&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="https://www.ilovesoils.com/posts/qmd_titanic/titanic_files/figure-html/cell-15-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Distribution of categorical variables</span></span>
+<span id="cb22-2">fig, (ax1, ax2, ax3, ax4) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots(ncols<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>, figsize <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>))</span>
+<span id="cb22-3">data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Sex'</span>].value_counts().plot(kind <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'bar'</span>, ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax1)</span>
+<span id="cb22-4">ax1.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Sex'</span>)</span>
+<span id="cb22-5">data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Survived'</span>].value_counts().plot(kind <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'bar'</span>, ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax2)</span>
+<span id="cb22-6">ax2.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Survived'</span>)</span>
+<span id="cb22-7">ax2.set_xticklabels([<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Perished'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Survived'</span>])</span>
+<span id="cb22-8">data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Pclass'</span>].value_counts().plot(kind <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'bar'</span>, ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax3)</span>
+<span id="cb22-9">ax3.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Pclass'</span>)</span>
+<span id="cb22-10">data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Embarked'</span>].value_counts().plot(kind <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'bar'</span>, ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax4)</span>
+<span id="cb22-11">ax4.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Embarked'</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;matplotlib.text.Text&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="https://www.ilovesoils.com/posts/qmd_titanic/titanic_files/figure-html/cell-16-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>The above plots show the distributions of numerical and categorical columns in our data. Age ranges from 0 to 80 years with mean and mode around 25-30 years, Fare ranges from 0 to over 500 dollars, Parch and SibSp has its mode at 0 meaning most people did not travel with any parent/child or sibling/spouse, There were around 453 males and 289 females onboard, 424 perished and 288 survived. Most of the passengers were in Lower Pclass and embarked at station S.</p>
+<section id="understanding-the-dependencies-of-dependent-and-independent-variables" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-the-dependencies-of-dependent-and-independent-variables">Understanding the dependencies of dependent and independent variables</h3>
+<p>Since for the given data, more than 50% of the passengers perished, We will investigate the factors that survival of the passengers depend on and would like to answer questions like did females have more chance of surviving, how does age or fare affect the survival, does having a parent or child, or sibling or spouse influence survival and how does Pclass affect survival. Dependent variable is ‘Survived’ which gives 0 for rows for passengers who perished and 1 for passengers that survived. Independent variables are Sex, Pclass, Embarked, Age, Fare etc.</p>
+<p>There could be other factors or variables like location of cabins or location/state(sleep or awake) of passengers at the time of the accident etc which we had limited data for and hence ave been omitted from the analysis. We also omitted rows that had missing values for ‘Age’ and ‘Embarked’ so that will also skew the statistical analysis a bit.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#Function to create grouped data by factors</span></span>
+<span id="cb24-2"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> grouped_by_factors(df,factor):</span>
+<span id="cb24-3">    mean_by_factor <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> df.groupby(factor).describe()</span>
+<span id="cb24-4">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> mean_by_factor</span></code></pre></div>
+</div>
+<p>Some understanding of mean/max/std/count would be helpful for our analysis so I created a function to display statistics using groupby function. We will also be creating plots to help visualize the data.</p>
+</section>
+<section id="understanding-dependent-variable-survived-by-numerical-columns" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-dependent-variable-survived-by-numerical-columns">Understanding Dependent variable ‘Survived’ by numerical columns</h3>
+<section id="survived-by-age-and-fare" class="level4">
+<h4 class="anchored" data-anchor-id="survived-by-age-and-fare">‘Survived’ by Age and Fare</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1">fig, (ax1, ax2) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots(ncols<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, figsize <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>))</span>
+<span id="cb25-2">fig1 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sns.regplot(x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Age"</span>, y<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Survived"</span>, data<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>data, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> ax1)</span>
+<span id="cb25-3">fig2 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sns.regplot(x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Fare"</span>, y<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Survived"</span>, data<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>data, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> ax2)</span>
+<span id="cb25-4">plt.suptitle(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Perished vs. Survived by Age and Fare"</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>)</span>
+<span id="cb25-5">fig1.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">set</span>(ylabel<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Survival Rate'</span>), fig2.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">set</span>(ylabel<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Survival Rate'</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>([&lt;matplotlib.text.Text&gt;], [&lt;matplotlib.text.Text&gt;])</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="https://www.ilovesoils.com/posts/qmd_titanic/titanic_files/figure-html/cell-18-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="survived-by-sibsp-and-parch" class="level4">
+<h4 class="anchored" data-anchor-id="survived-by-sibsp-and-parch">‘Survived’ by SibSp and Parch</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1">g <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sns.PairGrid(data, y_vars<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Survived"</span>], x_vars<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"SibSp"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Parch"</span>], size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>)</span>
+<span id="cb27-2">g.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">map</span>(sns.barplot, color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">".4"</span>)</span>
+<span id="cb27-3">g.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">set</span>(ylabel<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Survival Rate'</span>)</span>
+<span id="cb27-4">plt.suptitle(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Perished vs. Survived by SibSp and Parch"</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;matplotlib.text.Text&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="https://www.ilovesoils.com/posts/qmd_titanic/titanic_files/figure-html/cell-19-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1">grouped_by_factors(data,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Survived'</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Age</th>
+<th data-quarto-table-cell-role="th">Fare</th>
+<th data-quarto-table-cell-role="th">Parch</th>
+<th data-quarto-table-cell-role="th">SibSp</th>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Survived</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="8" data-quarto-table-cell-role="th" data-valign="top">0</td>
+<td data-quarto-table-cell-role="th">count</td>
+<td>424.000000</td>
+<td>424.000000</td>
+<td>424.000000</td>
+<td>424.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mean</td>
+<td>30.626179</td>
+<td>22.965456</td>
+<td>0.365566</td>
+<td>0.525943</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">std</td>
+<td>14.172110</td>
+<td>31.448825</td>
+<td>0.878341</td>
+<td>1.044760</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">min</td>
+<td>1.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">25%</td>
+<td>21.000000</td>
+<td>7.895800</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">50%</td>
+<td>28.000000</td>
+<td>11.887500</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">75%</td>
+<td>39.000000</td>
+<td>26.550000</td>
+<td>0.000000</td>
+<td>1.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">max</td>
+<td>74.000000</td>
+<td>263.000000</td>
+<td>6.000000</td>
+<td>5.000000</td>
+</tr>
+<tr class="odd">
+<td rowspan="8" data-quarto-table-cell-role="th" data-valign="top">1</td>
+<td data-quarto-table-cell-role="th">count</td>
+<td>288.000000</td>
+<td>288.000000</td>
+<td>288.000000</td>
+<td>288.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mean</td>
+<td>28.193299</td>
+<td>51.647672</td>
+<td>0.531250</td>
+<td>0.496528</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">std</td>
+<td>14.859146</td>
+<td>70.664499</td>
+<td>0.808747</td>
+<td>0.732512</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">min</td>
+<td>0.420000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">25%</td>
+<td>19.000000</td>
+<td>13.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">50%</td>
+<td>28.000000</td>
+<td>26.250000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">75%</td>
+<td>36.000000</td>
+<td>65.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">max</td>
+<td>80.000000</td>
+<td>512.329200</td>
+<td>5.000000</td>
+<td>4.000000</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>The data shows 424 passengers did not survive and 288 did.</p>
+<p>Average age of passengers that survived was 28.2(std=14.8) years as compared to 30.62(14.17) for those who did not survive. On average, passengers who survived paid higher fare(mean=51.6 dollars) as compared to who did not(mean=22.9 dollars).</p>
+<p>From the barchart, the survival rate for those travelling with 1/2 sibling or spouse and 1/2/3 parent or children was higher than the ones that did not. The relationship of survival is not linear with the number of sibsp/parch which could be due to lack of data.</p>
+<p>From the correlation plot, Survival rate is positively correlated to Fare and negatively correlated to Age which means younger people and those who paid more had higher chances of surviving</p>
+</section>
+</section>
+<section id="understanding-dependent-variable-survived-by-categorical-columns" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-dependent-variable-survived-by-categorical-columns">Understanding Dependent variable ‘Survived’ by Categorical columns</h3>
+<section id="survived-by-pclass" class="level4">
+<h4 class="anchored" data-anchor-id="survived-by-pclass">‘Survived’ by Pclass</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1">grouped_by_factors(data,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Pclass'</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Age</th>
+<th data-quarto-table-cell-role="th">Fare</th>
+<th data-quarto-table-cell-role="th">Parch</th>
+<th data-quarto-table-cell-role="th">SibSp</th>
+<th data-quarto-table-cell-role="th">Survived</th>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Pclass</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="8" data-quarto-table-cell-role="th" data-valign="top">Lower</td>
+<td data-quarto-table-cell-role="th">count</td>
+<td>355.000000</td>
+<td>355.000000</td>
+<td>355.000000</td>
+<td>355.000000</td>
+<td>355.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mean</td>
+<td>25.140620</td>
+<td>13.229435</td>
+<td>0.456338</td>
+<td>0.585915</td>
+<td>0.239437</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">std</td>
+<td>12.495398</td>
+<td>10.043158</td>
+<td>0.971447</td>
+<td>1.157303</td>
+<td>0.427342</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">min</td>
+<td>0.420000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">25%</td>
+<td>18.000000</td>
+<td>7.775000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">50%</td>
+<td>24.000000</td>
+<td>8.050000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">75%</td>
+<td>32.000000</td>
+<td>15.741700</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">max</td>
+<td>74.000000</td>
+<td>56.495800</td>
+<td>6.000000</td>
+<td>5.000000</td>
+<td>1.000000</td>
+</tr>
+<tr class="odd">
+<td rowspan="8" data-quarto-table-cell-role="th" data-valign="top">Middle</td>
+<td data-quarto-table-cell-role="th">count</td>
+<td>173.000000</td>
+<td>173.000000</td>
+<td>173.000000</td>
+<td>173.000000</td>
+<td>173.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mean</td>
+<td>29.877630</td>
+<td>21.471556</td>
+<td>0.404624</td>
+<td>0.427746</td>
+<td>0.479769</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">std</td>
+<td>14.001077</td>
+<td>13.187429</td>
+<td>0.705775</td>
+<td>0.611645</td>
+<td>0.501041</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">min</td>
+<td>0.670000</td>
+<td>10.500000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">25%</td>
+<td>23.000000</td>
+<td>13.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">50%</td>
+<td>29.000000</td>
+<td>15.045800</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">75%</td>
+<td>36.000000</td>
+<td>26.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">max</td>
+<td>70.000000</td>
+<td>73.500000</td>
+<td>3.000000</td>
+<td>3.000000</td>
+<td>1.000000</td>
+</tr>
+<tr class="odd">
+<td rowspan="8" data-quarto-table-cell-role="th" data-valign="top">Upper</td>
+<td data-quarto-table-cell-role="th">count</td>
+<td>184.000000</td>
+<td>184.000000</td>
+<td>184.000000</td>
+<td>184.000000</td>
+<td>184.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mean</td>
+<td>38.105543</td>
+<td>88.048121</td>
+<td>0.413043</td>
+<td>0.456522</td>
+<td>0.652174</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">std</td>
+<td>14.778904</td>
+<td>81.293524</td>
+<td>0.734061</td>
+<td>0.634406</td>
+<td>0.477580</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">min</td>
+<td>0.920000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">25%</td>
+<td>27.000000</td>
+<td>33.890600</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">50%</td>
+<td>37.000000</td>
+<td>67.950000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>1.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">75%</td>
+<td>49.000000</td>
+<td>107.043750</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">max</td>
+<td>80.000000</td>
+<td>512.329200</td>
+<td>4.000000</td>
+<td>3.000000</td>
+<td>1.000000</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1">fig, (ax1, ax2) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots(ncols<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, figsize <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>))</span>
+<span id="cb31-2">fig1 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sns.countplot(x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Pclass"</span>, data<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>data, hue<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Survived'</span>, palette<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Greens_d"</span>, ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax1)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb31-3">plt.legend([<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Perished"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Survived"</span>])</span>
+<span id="cb31-4">fig2 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sns.barplot(x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Pclass"</span>, y<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Survived"</span>, data<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>data, ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax2)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb31-5">plt.suptitle(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Survival rate by Pclass"</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;matplotlib.text.Text&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="https://www.ilovesoils.com/posts/qmd_titanic/titanic_files/figure-html/cell-22-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Mean Fare of Upper Class was 88 dollars, Middle Class was 21.47 dollars and Lower Class was 13.22 dollars. Most survivors were from upper class(mean survival = 0.65), followed by middle(mean survival = 0.48) and then lower(mean survival = 0.24). Most of the passengers who did not survive belonged to the lower class Pclass shows linear relation to survival probability. There could be several reasons for that. People in upper classes could have boarded lifeboats before the lower classes, it also fits well with the correlation to fare in the prev plot.</p>
+</section>
+<section id="survived-by-embarked" class="level4">
+<h4 class="anchored" data-anchor-id="survived-by-embarked">‘Survived’ by Embarked</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1">sns.countplot(x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Embarked"</span>, data<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>data, hue<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Survived'</span>, palette<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Greens_d"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb33-2">sns.countplot(x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Embarked"</span>, data<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>data, hue<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Pclass'</span>, palette<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Reds_d"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb33-3">plt.suptitle(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Valuecounts of Survivors by Pclass"</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>)</span>
+<span id="cb33-4">plt.suptitle(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Valuecounts of Female vs Male survivors"</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>)</span>
+<span id="cb33-5">label <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Perished"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Survived"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Lower"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Upper"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Middle"</span>]</span>
+<span id="cb33-6">plt.legend(label, loc<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'upper center'</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;matplotlib.legend.Legend&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="https://www.ilovesoils.com/posts/qmd_titanic/titanic_files/figure-html/cell-23-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Most of the passengers were in lower Pclass and embarked from ‘S’ followed by ‘C’ and ‘Q’. Does not show much relationship to survival rate</p>
+</section>
+<section id="survived-by-sex" class="level4">
+<h4 class="anchored" data-anchor-id="survived-by-sex">‘Survived’ by Sex</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1">data.groupby(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Sex'</span>).describe()</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Age</th>
+<th data-quarto-table-cell-role="th">Fare</th>
+<th data-quarto-table-cell-role="th">Parch</th>
+<th data-quarto-table-cell-role="th">SibSp</th>
+<th data-quarto-table-cell-role="th">Survived</th>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Sex</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="8" data-quarto-table-cell-role="th" data-valign="top">female</td>
+<td data-quarto-table-cell-role="th">count</td>
+<td>259.000000</td>
+<td>259.000000</td>
+<td>259.000000</td>
+<td>259.000000</td>
+<td>259.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mean</td>
+<td>27.745174</td>
+<td>47.332433</td>
+<td>0.714286</td>
+<td>0.644788</td>
+<td>0.752896</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">std</td>
+<td>13.989760</td>
+<td>61.517487</td>
+<td>1.069045</td>
+<td>0.930367</td>
+<td>0.432163</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">min</td>
+<td>0.750000</td>
+<td>6.750000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">25%</td>
+<td>18.000000</td>
+<td>13.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>1.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">50%</td>
+<td>27.000000</td>
+<td>26.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>1.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">75%</td>
+<td>36.000000</td>
+<td>56.964600</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">max</td>
+<td>63.000000</td>
+<td>512.329200</td>
+<td>6.000000</td>
+<td>5.000000</td>
+<td>1.000000</td>
+</tr>
+<tr class="odd">
+<td rowspan="8" data-quarto-table-cell-role="th" data-valign="top">male</td>
+<td data-quarto-table-cell-role="th">count</td>
+<td>453.000000</td>
+<td>453.000000</td>
+<td>453.000000</td>
+<td>453.000000</td>
+<td>453.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mean</td>
+<td>30.726645</td>
+<td>27.268836</td>
+<td>0.271523</td>
+<td>0.439294</td>
+<td>0.205298</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">std</td>
+<td>14.678201</td>
+<td>45.841889</td>
+<td>0.651076</td>
+<td>0.923609</td>
+<td>0.404366</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">min</td>
+<td>0.420000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">25%</td>
+<td>21.000000</td>
+<td>7.895800</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">50%</td>
+<td>29.000000</td>
+<td>13.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">75%</td>
+<td>39.000000</td>
+<td>28.500000</td>
+<td>0.000000</td>
+<td>1.000000</td>
+<td>0.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">max</td>
+<td>80.000000</td>
+<td>512.329200</td>
+<td>5.000000</td>
+<td>5.000000</td>
+<td>1.000000</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1">sns.countplot(x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sex"</span>, data<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>data, hue<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Survived'</span>, palette<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Greens_d"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb36-2">plt.suptitle(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Valuecounts of Female vs Male survivors"</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>)</span>
+<span id="cb36-3">label <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Perished"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Survived"</span>]</span>
+<span id="cb36-4">plt.legend(label, loc<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'upper center'</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;matplotlib.legend.Legend&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="https://www.ilovesoils.com/posts/qmd_titanic/titanic_files/figure-html/cell-25-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Mean age of females who boarded the ship was 27-28 years and males was 30-31 years. There were 259 females and 453 males, more number of females(mean survival = 0.75) survived than males(mean survival = 0.20)</p>
+<p>For the purpose of this analysis, I will pick <strong>Sex, Pclass and Age</strong> as major factors and investigate them further. The reason why I am picking them is because they show correlation with survival rate. Survival showed correlation to Fare as well but since the fare is represented by Pclass, I picked Pclass over Fare. Although other factors also affect survival, but I will focus on these three for this exercise</p>
+</section>
+</section>
+<section id="understanding-pclass-and-sex-as-a-factor" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-pclass-and-sex-as-a-factor">Understanding Pclass and Sex as a factor</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1">sns.barplot(x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Pclass"</span>, y<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Survived"</span>, hue<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sex"</span>, data<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>data)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb38-2">plt.suptitle(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Mean Survival rate of Female vs Male survivors by Pclass"</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;matplotlib.text.Text&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="https://www.ilovesoils.com/posts/qmd_titanic/titanic_files/figure-html/cell-26-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>There were 314 females and 577 males, mean for female survivors(mean=0.74,std= 0.44) is more than males(mean=0.19,std= 0.39) across all Pclasses, Survival has linear relationship with class. Females had high probability of survival in both Upper and Middle class. Only upper class males had high probability of survival, which was lower than low class female passengers however</p>
+</section>
+<section id="understanding-age-as-a-factor" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-age-as-a-factor">Understanding Age as a factor</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(grouped_by_factors(data,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Age'</span>).head())</span>
+<span id="cb40-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(grouped_by_factors(data,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Age'</span>).tail())</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>              Fare  Parch  SibSp  Survived
+Age                                       
+0.42 count  1.0000    1.0    1.0       1.0
+     mean   8.5167    1.0    0.0       1.0
+     std       NaN    NaN    NaN       NaN
+     min    8.5167    1.0    0.0       1.0
+     25%    8.5167    1.0    0.0       1.0
+          Fare  Parch  SibSp  Survived
+Age                                   
+80.0 min  30.0    0.0    0.0       1.0
+     25%  30.0    0.0    0.0       1.0
+     50%  30.0    0.0    0.0       1.0
+     75%  30.0    0.0    0.0       1.0
+     max  30.0    0.0    0.0       1.0</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1">surv_age <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data[data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Survived'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]</span>
+<span id="cb42-2">g <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> surv_age[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Age'</span>].plot(kind<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'hist'</span>, figsize<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>], alpha<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">.8</span>)</span>
+<span id="cb42-3">notsurv_age <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data[data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Survived'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]</span>
+<span id="cb42-4">notsurv_age[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Age'</span>].plot(kind<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'hist'</span>, figsize<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>], alpha<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">.4</span>)</span>
+<span id="cb42-5">plt.legend(label)</span>
+<span id="cb42-6">g.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">set</span>(xlabel<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Age'</span>)</span>
+<span id="cb42-7">plt.suptitle(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Distribution of Age for Perished and Survived"</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;matplotlib.text.Text&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="https://www.ilovesoils.com/posts/qmd_titanic/titanic_files/figure-html/cell-28-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Age of the passengers ranged from 0 to 80 years. Green bar is for passengers who did not survive and the blue is for those who survived. The distribution is almost normal distribution with similar shape and mode around 20 years. Below is the correlation for Age vs mean survived, it shows slight negative correlation with pearson’r value of -0.082</p>
+<section id="correlation-of-survived-with-age" class="level4">
+<h4 class="anchored" data-anchor-id="correlation-of-survived-with-age">Correlation of ‘Survived’ with Age</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1">sns.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">set</span>(style<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"darkgrid"</span>, color_codes<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb44-2">g <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sns.jointplot(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Age"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Survived"</span>, data<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>data, kind<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"reg"</span>,color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"g"</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">7</span>)</span>
+<span id="cb44-3">plt.subplots_adjust(top<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.95</span>)</span>
+<span id="cb44-4">plt.suptitle(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Distribution of Age for Perished and Survived"</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;matplotlib.text.Text&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="https://www.ilovesoils.com/posts/qmd_titanic/titanic_files/figure-html/cell-29-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="correlation-of-survived-with-age-and-sex" class="level4">
+<h4 class="anchored" data-anchor-id="correlation-of-survived-with-age-and-sex">Correlation of ‘Survived’ with Age and Sex</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1">g <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sns.lmplot(x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Age"</span>, y<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Survived"</span>, col<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sex"</span>, hue<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sex"</span>, data<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>data, y_jitter<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">.02</span>, logistic<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb46-2">plt.subplots_adjust(top<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.9</span>)</span>
+<span id="cb46-3">plt.suptitle(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Correlation of Age with Survival Rate"</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;matplotlib.text.Text&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="https://www.ilovesoils.com/posts/qmd_titanic/titanic_files/figure-html/cell-30-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Survival probability was higher for Younger Men and Older Women, Side by side comparison of males and females by age further supports that</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1">g <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sns.factorplot(x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Survived"</span>, y<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Age"</span>, hue<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sex"</span>, data<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>data, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>, kind<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"bar"</span>, palette<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"muted"</span>)</span>
+<span id="cb48-2">g.despine(left<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb48-3">plt.subplots_adjust(top<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.95</span>)</span>
+<span id="cb48-4">plt.suptitle(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Survived vs Age for males and females"</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>)</span>
+<span id="cb48-5">g.set_xticklabels([<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Perished'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Survived'</span>])</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="https://www.ilovesoils.com/posts/qmd_titanic/titanic_files/figure-html/cell-31-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="hypothesis-testing" class="level2">
+<h2 class="anchored" data-anchor-id="hypothesis-testing">Hypothesis testing</h2>
+<p>I have a hypothesis that passengers that are lower in age(&lt;15 years) had greater chance of survival than females.</p>
+<p>Null Hypothesis would be that the difference in chances of survival of passengers greater or lower than 15 years is not significant and alternate would be that it is significant.</p>
+<pre><code>                        H0: µchild = µfemale at α = 0.05, 
+                        HA: µchild ≠ µfemale at α = 0.05, where α is the t-critical at which the probability is .05 and µchild and µfemale are population means for the two groups.</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#Children under 15yrs of age</span></span>
+<span id="cb50-2">data_children <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data[data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Age'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span>]</span></code></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb51" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#Females of age greater than 15 years</span></span>
+<span id="cb51-2">data_female <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data[(data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Sex'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'female'</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span> (data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Age'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span>)]</span></code></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1">scipy.stats.ttest_ind(data_children[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Survived'</span>], data_female[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Survived'</span>], axis<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, equal_var<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span>, nan_policy<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'propagate'</span>)</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>Ttest_indResult(statistic=-2.978953154108325, pvalue=0.0034528377861817636)</code></pre>
+</div>
+</div>
+<section id="since-p-value-is-low-the-difference-in-mean-survival-is-significant-for-females-vs.-children.-negative-t-statistic-shows-that-the-mean-survival-of-females-is-more-than-that-of-children" class="level6">
+<h6 class="anchored" data-anchor-id="since-p-value-is-low-the-difference-in-mean-survival-is-significant-for-females-vs.-children.-negative-t-statistic-shows-that-the-mean-survival-of-females-is-more-than-that-of-children">Since p value is low, the difference in mean survival is significant for females vs.&nbsp;children. Negative t-statistic shows that the mean survival of females is more than that of children</h6>
+</section>
+</section>
+<section id="conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions">Conclusions</h2>
+<p>In Conclusion with the given dataset, Most contributing factors are ‘Sex’ and Pclass. Women had the most probability of survival in general. Survival rate is positively correlated to Fare and negatively correlated to Age which means younger people and those who paid more had higher chances of surviving. Females had positive correlation of survival with age and Males had negative correlation. Most survivors were from Upper Pclass followed by medium and lower class passengers. Most of the passengers in lower class perished. Passengers with any parent/child/sibling or spouse had higher chance at survival than the ones that did not. The analysis has following limitations: Omitted rows with missing values for ‘Age’ and ‘emabarked’ Did not draw conclusions based on ‘Name’ column dropped ‘Cabin’ and ‘PassengerId’ during data wrangling phase The data set is limited, the complete dataset should contain data for 1500 passengers</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Numpy</category>
+  <category>Pandas</category>
+  <category>Data Analysis</category>
+  <guid>https://www.ilovesoils.com/posts/qmd_titanic/titanic.html</guid>
+  <pubDate>Fri, 12 May 2023 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Can bamboo help to solve climate crisis?</title>

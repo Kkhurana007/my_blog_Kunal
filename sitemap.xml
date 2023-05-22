@@ -2,46 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.ilovesoils.com/index.html</loc>
-    <lastmod>2023-05-21T05:28:41.861Z</lastmod>
+    <lastmod>2023-05-22T20:32:55.325Z</lastmod>
   </url>
   <url>
     <loc>https://www.ilovesoils.com/posts/bamboo_plantation/index.html</loc>
-    <lastmod>2023-05-21T05:28:42.653Z</lastmod>
+    <lastmod>2023-05-22T20:32:55.973Z</lastmod>
   </url>
   <url>
     <loc>https://www.ilovesoils.com/posts/when_to_water/index.html</loc>
-    <lastmod>2023-05-21T05:28:43.013Z</lastmod>
+    <lastmod>2023-05-22T20:32:56.285Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ilovesoils.com/posts/qmd_computations/computations.html</loc>
+    <lastmod>2023-05-22T20:32:56.605Z</lastmod>
   </url>
   <url>
     <loc>https://www.ilovesoils.com/posts/sample_ipynb/hello.html</loc>
-    <lastmod>2023-05-21T05:28:43.409Z</lastmod>
+    <lastmod>2023-05-22T20:32:56.901Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ilovesoils.com/posts/qmd_titanic/titanic.html</loc>
+    <lastmod>2023-05-22T20:32:58.205Z</lastmod>
   </url>
   <url>
     <loc>https://www.ilovesoils.com/posts/Digitalization_of_agricluture/index.html</loc>
-    <lastmod>2023-05-21T05:28:43.770Z</lastmod>
+    <lastmod>2023-05-22T20:32:58.521Z</lastmod>
   </url>
   <url>
     <loc>https://www.ilovesoils.com/posts/Machine learning in Agriculture/index.html</loc>
-    <lastmod>2023-05-21T05:28:44.134Z</lastmod>
+    <lastmod>2023-05-22T20:32:58.837Z</lastmod>
   </url>
   <url>
     <loc>https://www.ilovesoils.com/posts/Ai_watersaving/index.html</loc>
-    <lastmod>2023-05-21T05:28:44.490Z</lastmod>
+    <lastmod>2023-05-22T20:32:59.149Z</lastmod>
   </url>
   <url>
     <loc>https://www.ilovesoils.com/posts/irrigraiton_scheduling/content.html</loc>
-    <lastmod>2023-05-21T05:28:44.886Z</lastmod>
+    <lastmod>2023-05-22T20:32:59.465Z</lastmod>
   </url>
   <url>
     <loc>https://www.ilovesoils.com/about.html</loc>
-    <lastmod>2023-05-21T05:28:45.278Z</lastmod>
+    <lastmod>2023-05-22T20:32:59.817Z</lastmod>
   </url>
   <url>
     <loc>https://www.ilovesoils.com/nbs/00_core.html</loc>
-    <lastmod>2023-05-21T05:28:45.614Z</lastmod>
+    <lastmod>2023-05-22T20:33:00.113Z</lastmod>
   </url>
   <url>
     <loc>https://www.ilovesoils.com/nbs/index.html</loc>
-    <lastmod>2023-05-21T05:28:46.226Z</lastmod>
+    <lastmod>2023-05-22T20:33:00.633Z</lastmod>
   </url>
 </urlset>
