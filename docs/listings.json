@@ -2,7 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/qmd_computations/computations.html",
       "/posts/sample_ipynb/hello.html",
+      "/posts/qmd_titanic/titanic.html",
       "/posts/Ai_watersaving/index.html",
       "/posts/bamboo_plantation/index.html",
       "/posts/when_to_water/index.html",
