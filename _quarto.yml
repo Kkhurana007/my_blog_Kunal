@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 website:
+  google-analytics: "G-YSR47ZM5Y0"
   title: "Homepage"
   site-url: https://www.ilovesoils.com
   description: "Personal blog"
