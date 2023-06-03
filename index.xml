@@ -9,7 +9,7 @@
 <link>https://www.ilovesoils.com/index.html</link>
 <atom:link href="https://www.ilovesoils.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Personal blog</description>
-<generator>quarto-1.3.353</generator>
+<generator>quarto-1.3.361</generator>
 <lastBuildDate>Mon, 22 May 2023 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Quarto Computations</title>
@@ -2173,26 +2173,6 @@ font-style: inherit;">'propagate'</span>)</span></code></pre></div>
   <pubDate>Fri, 12 May 2023 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Can bamboo help to solve climate crisis?</title>
-  <dc:creator>Kunal Khurana</dc:creator>
-  <link>https://www.ilovesoils.com/posts/bamboo_plantation/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>The <a href="https://www.weforum.org/agenda/2023/02/bamboo-construction-housing-climate/">article</a> discusses how bamboo construction can be a sustainable and affordable solution to housing while also helping mitigate climate change. Bamboo is a fast-growing, renewable resource that can be used to build structurally sound buildings that are earthquake-resistant and can withstand extreme weather conditions. Bamboo also has a lower carbon footprint compared to traditional building materials like concrete and steel. The article highlights several examples of successful bamboo construction projects, including a 22-story bamboo skyscraper in Colombia and a village in China where all the houses are made of bamboo. By using bamboo in construction, we can create more eco-friendly and affordable housing options while also reducing carbon emissions.</p>
-
-
-
- ]]></description>
-  <category>C</category>
-  <category>Bamboo</category>
-  <guid>https://www.ilovesoils.com/posts/bamboo_plantation/index.html</guid>
-  <pubDate>Tue, 09 May 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://www.ilovesoils.com/posts/bamboo_plantation/bamboo.png" medium="image" type="image/png" height="80" width="144"/>
-</item>
-<item>
   <title>Can AI decide when to water crops?</title>
   <dc:creator>Kunal Khurana</dc:creator>
   <link>https://www.ilovesoils.com/posts/when_to_water/index.html</link>
@@ -2235,28 +2215,24 @@ font-style: inherit;">'propagate'</span>)</span></code></pre></div>
   <media:content url="https://www.ilovesoils.com/posts/Ai_watersaving/ai_water_saving.png" medium="image" type="image/png" height="146" width="144"/>
 </item>
 <item>
-  <title>Machine learning in Agriculture</title>
+  <title>Can bamboo help to solve climate crisis?</title>
   <dc:creator>Kunal Khurana</dc:creator>
-  <link>https://www.ilovesoils.com/posts/Machine learning in Agriculture/index.html</link>
+  <link>https://www.ilovesoils.com/posts/bamboo_plantation/index.html</link>
   <description><![CDATA[ 
 
 
 
 
-<p>The article <a href="https://www.researchgate.net/profile/Muhammad-Suleman-Memon/publication/351766285_Machine_Learning_In_Agriculture_A_Review/links/60a83aae45851522bc0a5479/Machine-Learning-In-Agriculture-A-Review.pdf">“Machine Learning in Agriculture: A Review”</a> provides a comprehensive overview of the current state and potential applications of machine learning in agriculture.</p>
-<p>The authors first introduce the concept of machine learning and its various techniques, including supervised, unsupervised, and reinforcement learning. They then provide an overview of the different areas in agriculture where machine learning can be applied, such as crop yield prediction, plant disease diagnosis, soil analysis, and livestock management.</p>
-<p>The article further explores the use of different types of sensors and data collection techniques that can be used to gather data for machine learning applications in agriculture. The authors also discuss the challenges associated with implementing machine learning in agriculture, such as data quality, lack of standardization, and limited computational resources.</p>
-<p>The authors present several case studies and examples of successful machine learning applications in agriculture, including precision farming, crop monitoring, and yield prediction. The article concludes with a discussion on the future directions and potential impact of machine learning in agriculture, including the development of new tools and technologies to support sustainable agriculture practices and enhance food security.</p>
+<p>The <a href="https://www.weforum.org/agenda/2023/02/bamboo-construction-housing-climate/">article</a> discusses how bamboo construction can be a sustainable and affordable solution to housing while also helping mitigate climate change. Bamboo is a fast-growing, renewable resource that can be used to build structurally sound buildings that are earthquake-resistant and can withstand extreme weather conditions. Bamboo also has a lower carbon footprint compared to traditional building materials like concrete and steel. The article highlights several examples of successful bamboo construction projects, including a 22-story bamboo skyscraper in Colombia and a village in China where all the houses are made of bamboo. By using bamboo in construction, we can create more eco-friendly and affordable housing options while also reducing carbon emissions.</p>
 
 
 
  ]]></description>
-  <category>Machine learning</category>
-  <category>Soil Analysis</category>
-  <category>Yield prediction</category>
-  <guid>https://www.ilovesoils.com/posts/Machine learning in Agriculture/index.html</guid>
-  <pubDate>Fri, 21 Apr 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://www.ilovesoils.com/posts/Machine learning in Agriculture/ML_in_agri.jpg" medium="image" type="image/jpeg"/>
+  <category>C</category>
+  <category>Bamboo</category>
+  <guid>https://www.ilovesoils.com/posts/bamboo_plantation/index.html</guid>
+  <pubDate>Tue, 09 May 2023 00:00:00 GMT</pubDate>
+  <media:content url="https://www.ilovesoils.com/posts/bamboo_plantation/bamboo.png" medium="image" type="image/png" height="80" width="144"/>
 </item>
 <item>
   <title>Irrigation scheduling with Machine learning</title>
@@ -2282,6 +2258,30 @@ font-style: inherit;">'propagate'</span>)</span></code></pre></div>
   <guid>https://www.ilovesoils.com/posts/irrigraiton_scheduling/content.html</guid>
   <pubDate>Fri, 21 Apr 2023 00:00:00 GMT</pubDate>
   <media:content url="https://www.ilovesoils.com/posts/irrigraiton_scheduling/Irrigation_scheduling.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Machine learning in Agriculture</title>
+  <dc:creator>Kunal Khurana</dc:creator>
+  <link>https://www.ilovesoils.com/posts/Machine learning in Agriculture/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The article <a href="https://www.researchgate.net/profile/Muhammad-Suleman-Memon/publication/351766285_Machine_Learning_In_Agriculture_A_Review/links/60a83aae45851522bc0a5479/Machine-Learning-In-Agriculture-A-Review.pdf">“Machine Learning in Agriculture: A Review”</a> provides a comprehensive overview of the current state and potential applications of machine learning in agriculture.</p>
+<p>The authors first introduce the concept of machine learning and its various techniques, including supervised, unsupervised, and reinforcement learning. They then provide an overview of the different areas in agriculture where machine learning can be applied, such as crop yield prediction, plant disease diagnosis, soil analysis, and livestock management.</p>
+<p>The article further explores the use of different types of sensors and data collection techniques that can be used to gather data for machine learning applications in agriculture. The authors also discuss the challenges associated with implementing machine learning in agriculture, such as data quality, lack of standardization, and limited computational resources.</p>
+<p>The authors present several case studies and examples of successful machine learning applications in agriculture, including precision farming, crop monitoring, and yield prediction. The article concludes with a discussion on the future directions and potential impact of machine learning in agriculture, including the development of new tools and technologies to support sustainable agriculture practices and enhance food security.</p>
+
+
+
+ ]]></description>
+  <category>Machine learning</category>
+  <category>Soil Analysis</category>
+  <category>Yield prediction</category>
+  <guid>https://www.ilovesoils.com/posts/Machine learning in Agriculture/index.html</guid>
+  <pubDate>Fri, 21 Apr 2023 00:00:00 GMT</pubDate>
+  <media:content url="https://www.ilovesoils.com/posts/Machine learning in Agriculture/ML_in_agri.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Digitaliztion of Agriculture</title>
